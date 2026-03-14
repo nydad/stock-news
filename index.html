@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Daily Digest</title>
+  <meta name="description" content="매일 아침 자동 큐레이션되는 미국 주식 시장 뉴스 & 시황 브리핑">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2310B981'/><path d='M6 22 L12 14 L18 18 L26 8' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='26' cy='8' r='2' fill='white'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="./" class="logo">
+        <span class="logo-icon">S</span>
+        <span class="logo-text">Stock Daily Digest</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Tab Bar -->
+  <nav class="tab-bar">
+    <div class="container tab-inner">
+      <button class="tab active" data-tab="overview">시황 종합</button>
+      <button class="tab" data-tab="news">주요 뉴스</button>
+    </div>
+  </nav>
+
+  <!-- Date Bar -->
+  <div class="date-bar">
+    <div class="container">
+      <div class="date-scroll" id="date-scroll"></div>
+    </div>
+  </div>
+
+  <main class="container" id="app">
+    <div id="loading" class="loading">
+      <div class="loading-bar"></div>
+      <p class="loading-text">시장 데이터를 불러오는 중...</p>
+    </div>
+
+    <div id="empty-state" class="empty hidden">
+      <h2>아직 발행된 뉴스가 없습니다</h2>
+      <p>매일 오전 8시에 자동으로 시황 브리핑이 생성됩니다.</p>
+    </div>
+
+    <div id="digest" class="hidden"></div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Stock Daily Digest</span>
+      <span class="footer-sep">&middot;</span>
+      <span>Gemini Flash + Claude Sonnet</span>
+      <a href="https://github.com/nydad/stock-news">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

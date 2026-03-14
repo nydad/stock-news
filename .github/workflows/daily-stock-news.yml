@@ -1,0 +1,46 @@
+name: Daily Stock News Digest
+
+on:
+  schedule:
+    # 08:00 KST daily (= 23:00 UTC previous day)
+    - cron: '0 23 * * *'
+  workflow_dispatch: # Manual trigger button in GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  collect-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Collect market data and news
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL_FAST: ${{ vars.OPENROUTER_MODEL_FAST || 'google/gemini-3-flash-preview' }}
+          OPENROUTER_MODEL_QUALITY: ${{ vars.OPENROUTER_MODEL_QUALITY || 'anthropic/claude-sonnet-4.6' }}
+        run: python scripts/collect_news.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "Stock News Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No new data to commit."
+          else
+            git commit -m "Daily stock news digest $(date -u +%Y-%m-%d)"
+            git push
+          fi
