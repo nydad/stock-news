@@ -52,13 +52,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 
 MAX_PER_FEED = 15
-AGE_HOURS = 36
 BATCH_SIZE = 8
 RETRY = 2
 RETRY_DELAY = 5
 
 KST = timezone(timedelta(hours=9))
-TODAY = datetime.now(KST).strftime("%Y-%m-%d")
+NOW_KST = datetime.now(KST)
+TODAY = NOW_KST.strftime("%Y-%m-%d")
+DAY_OF_WEEK = NOW_KST.weekday()  # 0=Mon, 6=Sun
+
+# On Monday (or after weekend), extend window to capture weekend news
+# Mon morning KST = 72h covers Fri evening US → Mon morning KST
+AGE_HOURS = 72 if DAY_OF_WEEK == 0 else 36
+IS_MONDAY = DAY_OF_WEEK == 0
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger("stock-news")
@@ -123,12 +129,18 @@ RSS_FEEDS = [
     {"name": "Reuters Business", "url": "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best"},
     {"name": "Bloomberg Markets", "url": "https://feeds.bloomberg.com/markets/news.rss"},
 
-    # --- Korean Financial News ---
+    # --- Korean Financial News (미국주식 관련 한국어 소스) ---
     {"name": "한국경제 글로벌", "url": "https://www.hankyung.com/feed/world-news"},
+    {"name": "한경 증권", "url": "https://www.hankyung.com/feed/stock"},
     {"name": "매일경제", "url": "https://www.mk.co.kr/rss/30100041/"},
+    {"name": "매경 증권", "url": "https://www.mk.co.kr/rss/30200030/"},
     {"name": "연합뉴스 경제", "url": "https://www.yna.co.kr/rss/economy.xml"},
     {"name": "연합인포맥스", "url": "https://news.einfomax.co.kr/rss/S1N1.xml"},
     {"name": "조선비즈", "url": "https://biz.chosun.com/rss/finance/"},
+    {"name": "이데일리 증권", "url": "https://rss.edaily.co.kr/edaily/finance/stock/"},
+    {"name": "서울경제", "url": "https://www.sedaily.com/rss/Series/FortuneStock"},
+
+    # --- saveticker.com: 직접 스크래핑 불가 (403/SPA). 동일 콘텐츠를 위 한국어 소스들로 커버 ---
 ]
 
 HEADERS = {"User-Agent": "StockNewsBot/1.0 (github.com/nydad/stock-news)"}
@@ -271,11 +283,44 @@ def fetch_fear_greed() -> dict | None:
 # Phase 1: Fetch News
 # ---------------------------------------------------------------------------
 
+def _fetch_saveticker() -> list[dict]:
+    """Best-effort scrape of saveticker.com/app/news (SPA, often 403)."""
+    try:
+        r = requests.get("https://saveticker.com/app/news", headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+        }, timeout=15)
+        if r.status_code != 200:
+            log.info("SaveTicker: HTTP %d (expected, SPA blocks bots)", r.status_code)
+            return []
+        # If we get HTML, try to extract article data (unlikely but worth trying)
+        if trafilatura:
+            text = trafilatura.extract(r.text, include_comments=False)
+            if text and len(text) > 100:
+                log.info("SaveTicker: extracted %d chars", len(text))
+                return [{
+                    "title": "SaveTicker 시황 요약",
+                    "url": "https://saveticker.com/app/news",
+                    "source": "SaveTicker",
+                    "published": datetime.now(timezone.utc).isoformat(),
+                    "description": text[:600],
+                }]
+        return []
+    except Exception as e:
+        log.info("SaveTicker: %s", e)
+        return []
+
+
 def fetch_all_feeds() -> list[dict]:
     cutoff = datetime.now(timezone.utc) - timedelta(hours=AGE_HOURS)
     articles = []
     for f in RSS_FEEDS:
         articles.extend(_fetch_rss(f, cutoff))
+
+    # Best-effort saveticker.com
+    articles.extend(_fetch_saveticker())
 
     # Deduplicate by URL hash
     seen: set[str] = set()
@@ -449,11 +494,14 @@ You will receive:
 1. Market data (indices, forex, commodities, futures, crypto, bonds, VIX)
 2. Fear & Greed index data
 3. Categorized news article summaries
+4. Whether today is Monday (weekend recap mode)
 
 Generate the following in KOREAN (한국어), except keep numbers, ticker symbols, and proper nouns in English:
 
 1. "market_briefing": 6-8 sentences. Professional, concise market overview.
    Cover: major index movements, key drivers, notable sector moves, overnight futures.
+   If it's MONDAY: include weekend recap covering key events from Saturday/Sunday
+   that may impact Monday's trading session (geopolitics, crypto moves, policy announcements).
    Tone: 전문적이고 객관적인 투자 정보 전달 톤.
 
 2. "key_insights": Array of 3-5 actionable insights. Each has:
@@ -518,9 +566,12 @@ def generate_editorial(market_data: dict, fear_greed: dict | None, articles: lis
             parts.append(f"  [{a.get('source', '')}] {a['title']}")
             parts.append(f"    {a.get('summary', '')}")
 
+    monday_note = "\n*** TODAY IS MONDAY — Include a weekend recap section in market_briefing. ***" if IS_MONDAY else ""
     user = (
         f"Today: {datetime.now(KST).strftime('%Y-%m-%d %A')}\n"
-        f"Total articles: {len(articles)}\n\n" + "\n".join(parts)
+        f"Total articles: {len(articles)}\n"
+        f"News window: last {AGE_HOURS} hours{' (extended for weekend coverage)' if IS_MONDAY else ''}"
+        f"{monday_note}\n\n" + "\n".join(parts)
     )
 
     result = _call_api(MODEL_QUALITY, EDITORIAL_PROMPT, user, max_tokens=3000)
@@ -657,7 +708,8 @@ def main():
     log.info("=" * 50)
     log.info("Stock & Market Daily News v1.0")
     log.info("Fast: %s / Quality: %s", MODEL_FAST, MODEL_QUALITY)
-    log.info("Date: %s (KST)", TODAY)
+    log.info("Date: %s (KST) | Window: %dh%s", TODAY, AGE_HOURS,
+             " (MONDAY - weekend recap)" if IS_MONDAY else "")
     log.info("=" * 50)
 
     digest = build_digest()
