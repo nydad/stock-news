@@ -1,0 +1,1865 @@
+{
+  "date": "2026-03-27",
+  "generated_at": "2026-03-26T23:37:15.988617+00:00",
+  "market_data": {
+    "indices": [
+      {
+        "name": "S&P 500",
+        "ticker": "^GSPC",
+        "price": 6477.16,
+        "change": -114.74,
+        "change_pct": -1.74
+      },
+      {
+        "name": "NASDAQ",
+        "ticker": "^IXIC",
+        "price": 21408.08,
+        "change": -521.74,
+        "change_pct": -2.38
+      },
+      {
+        "name": "다우존스",
+        "ticker": "^DJI",
+        "price": 45960.11,
+        "change": -469.38,
+        "change_pct": -1.01
+      },
+      {
+        "name": "러셀 2000",
+        "ticker": "^RUT",
+        "price": 2493.32,
+        "change": -43.06,
+        "change_pct": -1.7
+      },
+      {
+        "name": "필라델피아 반도체",
+        "ticker": "^SOX",
+        "price": 7585.87,
+        "change": -381.88,
+        "change_pct": -4.79
+      }
+    ],
+    "futures": [
+      {
+        "name": "S&P 500 선물",
+        "ticker": "ES=F",
+        "price": 6543.25,
+        "change": -97.5,
+        "change_pct": -1.47
+      },
+      {
+        "name": "나스닥 선물",
+        "ticker": "NQ=F",
+        "price": 23849.0,
+        "change": -518.75,
+        "change_pct": -2.13
+      },
+      {
+        "name": "다우 선물",
+        "ticker": "YM=F",
+        "price": 46369.0,
+        "change": -342.0,
+        "change_pct": -0.73
+      }
+    ],
+    "volatility": [
+      {
+        "name": "VIX (공포지수)",
+        "ticker": "^VIX",
+        "price": 27.44,
+        "change": 2.11,
+        "change_pct": 8.33
+      }
+    ],
+    "forex": [
+      {
+        "name": "달러/원",
+        "ticker": "KRW=X",
+        "price": 1509.16,
+        "change": 11.85,
+        "change_pct": 0.79
+      },
+      {
+        "name": "달러/엔",
+        "ticker": "JPY=X",
+        "price": 159.658,
+        "change": 0.94,
+        "change_pct": 0.59
+      },
+      {
+        "name": "유로/달러",
+        "ticker": "EURUSD=X",
+        "price": 1.1542,
+        "change": -0.0073,
+        "change_pct": -0.63
+      },
+      {
+        "name": "달러인덱스",
+        "ticker": "DX-Y.NYB",
+        "price": 99.865,
+        "change": 0.265,
+        "change_pct": 0.27
+      }
+    ],
+    "commodities": [
+      {
+        "name": "WTI 원유",
+        "ticker": "CL=F",
+        "price": 93.41,
+        "change": 3.09,
+        "change_pct": 3.42
+      },
+      {
+        "name": "브렌트유",
+        "ticker": "BZ=F",
+        "price": 100.92,
+        "change": -1.3,
+        "change_pct": -1.27
+      },
+      {
+        "name": "금",
+        "ticker": "GC=F",
+        "price": 4390.7,
+        "change": -159.1,
+        "change_pct": -3.5
+      },
+      {
+        "name": "은",
+        "ticker": "SI=F",
+        "price": 68.44,
+        "change": -3.92,
+        "change_pct": -5.42
+      },
+      {
+        "name": "천연가스",
+        "ticker": "NG=F",
+        "price": 2.92,
+        "change": -0.03,
+        "change_pct": -1.02
+      },
+      {
+        "name": "구리",
+        "ticker": "HG=F",
+        "price": 5.48,
+        "change": -0.05,
+        "change_pct": -0.87
+      }
+    ],
+    "crypto": [
+      {
+        "name": "비트코인",
+        "ticker": "BTC-USD",
+        "price": 68666.05,
+        "change": -2643.83,
+        "change_pct": -3.71
+      },
+      {
+        "name": "이더리움",
+        "ticker": "ETH-USD",
+        "price": 2059.57,
+        "change": -108.45,
+        "change_pct": -5.0
+      }
+    ],
+    "bonds": [
+      {
+        "name": "미국 10년물",
+        "ticker": "^TNX",
+        "price": 4.416,
+        "change": 0.088,
+        "change_pct": 2.03
+      },
+      {
+        "name": "미국 2년물",
+        "ticker": "^IRX",
+        "price": 3.62,
+        "change": 0.0,
+        "change_pct": 0.0
+      }
+    ]
+  },
+  "fear_greed": null,
+  "market_briefing": "26일(현지시간) 뉴욕 증시는 미·이란 지정학적 긴장과 고유가 충격이 겹치며 전 섹터에 걸쳐 급락했습니다. S&P 500은 -1.74%, NASDAQ은 -2.38% 하락하며 조정 국면이 심화되었고, 필라델피아 반도체 지수는 -4.79%로 가장 큰 낙폭을 기록했습니다. Meta가 법원 패소와 AI 전략 우려로 -8% 급락하며 시장 심리를 악화시켰고, Micron 등 반도체주도 동반 폭락했습니다. 반면 소프트웨어 섹터는 Salesforce, CrowdStrike 등이 상승 마감하며 상대적 강세를 보였습니다. OECD는 이란 전쟁 여파로 미국 인플레이션 전망치를 4.2%로 대폭 상향하며 연준의 고금리 장기화 가능성을 제기했고, 미국 10년물 국채 금리는 4.416%로 급등했습니다. VIX 공포지수는 27.44로 +8.33% 치솟으며 시장 불안감이 고조되었습니다. 다만 트럼프 대통령이 이란 에너지 시설 공격 유예를 4월 6일까지 연장한다고 발표하면서 장 마감 후 S&P 500 선물은 소폭 반등하는 모습입니다.",
+  "key_insights": [
+    {
+      "title": "반도체 섹터 급락 주의",
+      "detail": "필라델피아 반도체 지수가 -4.79% 폭락하며 Nvidia, Micron 등 주요 반도체주가 동반 급락했습니다. Google의 'TurboQuant' 알고리즘 공개에 따른 수요 감소 우려와 지정학적 리스크가 복합적으로 작용하고 있어 단기 변동성 확대가 예상됩니다.",
+      "type": "bearish"
+    },
+    {
+      "title": "이란 협상 연장 선물 반등",
+      "detail": "트럼프 대통령이 이란 에너지 시설 공격 유예를 4월 6일까지 연장하면서 장 마감 후 S&P 500 선물이 반등세를 보이고 있습니다. 다만 이란 측의 협상 거부 의사가 여전해 지정학적 불확실성은 지속될 전망입니다.",
+      "type": "neutral"
+    },
+    {
+      "title": "인플레이션 재점화 경고",
+      "detail": "OECD가 미국 인플레이션 전망치를 4.2%로 상향하고 Moody's, Goldman Sachs가 경기침체 확률을 높이는 등 스태그플레이션 우려가 커지고 있습니다. 연준의 금리 인하 기대가 후퇴하며 성장주 밸류에이션에 추가 압박이 가해질 수 있습니다.",
+      "type": "bearish"
+    },
+    {
+      "title": "고유가 수혜주 BYD 주목",
+      "detail": "이란 전쟁발 유가 급등이 전기차 수요를 자극하며 BYD 주가가 1년 만에 최고의 월간 상승률을 기록하고 있습니다. 고유가 장기화 시 EV 섹터로의 자금 이동이 가속화될 수 있습니다.",
+      "type": "bullish"
+    },
+    {
+      "title": "Meta 규제 리스크 확대",
+      "detail": "Meta가 아동 안전 소송 패소와 추가 감원 계획으로 주가가 -8% 급락하며 시가총액 1,190억 달러가 증발했습니다. 규제 리스크와 막대한 AI 자본 지출 부담이 지속되어 단기 투자 심리 회복이 어려울 수 있습니다.",
+      "type": "bearish"
+    }
+  ],
+  "forex_commentary": "달러/원 환율은 1,509.16원으로 +0.79% 상승하며 원화 약세가 지속되고 있습니다. 중동 지정학적 리스크 확대와 고유가로 인한 경상수지 악화 우려, 외국인의 국내 주식 순매도세가 원화 약세 압력을 가중시키고 있습니다. 정부는 국민연금의 환헤지 확대와 국채 조기 상환 등 시장 안정화 조치를 발표했으나, 달러 강세 기조가 이어지는 한 환율 상단 압력은 당분간 지속될 전망입니다.",
+  "commodity_commentary": "WTI 원유는 배럴당 93.41달러로 +3.42% 급등하며 호르무즈 해협 봉쇄 우려와 중동 긴장이 유가를 끌어올리고 있습니다. 국내 휘발유 가격은 리터당 2,000원 돌파를 앞두고 있으며, 정부는 유류세 인하와 최고가격제 시행 등 긴급 대응에 나섰습니다. 금은 이란 협상 연장 소식에 안전자산 수요가 일부 후퇴하며 -3.5% 급락한 4,390.7달러를 기록했고, 은도 -5.42% 하락하는 등 귀금속 전반이 약세를 보였습니다.",
+  "outlook": "오늘 한국 시장은 전일 미국 증시 급락과 반도체 섹터 폭락의 여파로 KOSPI 및 KOSDAQ 모두 하방 압력이 클 것으로 예상됩니다. 트럼프 대통령의 이란 공격 유예 연장 소식이 낙폭을 일부 제한할 수 있으나, 고유가·고환율·고금리의 삼중 악재가 지속되는 상황에서 투자 심리 회복에는 시간이 필요합니다. 4월 6일 이란 협상 시한과 연준 위원들의 추가 발언, 국내 기업심리지수 발표 등이 주요 변수로 작용할 전망입니다.",
+  "trends": [
+    "중동 지정학 리스크",
+    "반도체 급락",
+    "스태그플레이션 우려",
+    "고유가 충격",
+    "원화 약세"
+  ],
+  "total_articles": 111,
+  "categories": [
+    {
+      "id": "market",
+      "name": "시장 동향",
+      "articles": [
+        {
+          "title": "Market guide: Where the S&P 500 may be headed, depending on how the Iran war goes",
+          "url": "https://www.cnbc.com/2026/03/26/market-guide-where-the-sp-500-may-go-depending-on-the-course-of-the-war.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T20:08:07+00:00",
+          "summary": "UBS는 미국-이란 전쟁의 전개 양상에 따라 S&P 500 지수가 최악의 경우 5,350선까지 추가 하락할 수 있다고 경고했습니다. 유가 급등이 경기 침체를 유발할 수 있다는 우려 속에 3월 증시는 1년 만에 최악의 월간 수익률을 기록할 전망입니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "sp500",
+            "ubs",
+            "recession",
+            "market"
+          ]
+        },
+        {
+          "title": "Daily Spotlight: Stocks Can Survive a Pullback",
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_46550_MarketOutlook_1774524185000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+          "source": "Yahoo Finance",
+          "published": "2026-03-26T11:23:05+00:00",
+          "summary": "S&P 500 지수가 지정학적 리스크로 고점 대비 5% 하락하는 풀백(Pullback)을 겪었으나, 전문가들은 이것이 강세장의 끝을 의미하지는 않는다고 분석합니다. 역사적으로 시장은 풀백 이후 평균 1개월 내에 회복되었으며 현재의 경제 성장세와 펀더멘털은 여전히 견고합니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "s&p500",
+            "market-correction",
+            "outlook"
+          ]
+        },
+        {
+          "title": "Oil Slips, US Stock Futures Gain on Iran Extension: Markets Wrap",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-26/stock-market-today-dow-s-p-live-updates",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T21:43:22+00:00",
+          "summary": "Donald Trump 대통령이 Iran과의 협상 마감 기한을 다시 연장하면서 시장 심리가 개선되어 유가는 하락하고 미국 주식 선물은 상승했습니다. 이는 글로벌 증시 매도세 이후 나타난 반등 흐름입니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "oil",
+            "sp500",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "국고채 금리 급등에 … 정부, 5조 조기상환 나서",
+          "url": "https://www.mk.co.kr/news/economy/11999508",
+          "source": "매일경제",
+          "published": "2026-03-26T08:56:11+00:00",
+          "summary": "국고채 금리 급등과 원화 약세에 대응해 정부가 5조 원 규모의 국채 조기 상환(바이백)과 발행 물량 축소 등 시장 안정화 대책을 발표했습니다. 또한 국민연금의 환헤지 확대와 WGBI 편입을 통한 외국인 자금 유입 유도로 환율 및 채권 시장의 변동성을 완화할 계획입니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "treasury",
+            "fx",
+            "buyback"
+          ]
+        },
+        {
+          "title": "[마켓뷰] 전쟁 불안 재점화 속 美증시 삭풍에 부담 커진 코스피",
+          "url": "https://www.yna.co.kr/view/AKR20260327021000008",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T23:08:06+00:00",
+          "summary": "중동 지정학적 리스크 재부각과 Google의 'TurboQuant' 알고리즘 공개에 따른 반도체 수요 감소 우려로 KOSPI가 3% 넘게 급락했습니다. 미국 증시에서도 Nvidia, Micron 등 주요 기술주가 폭락하며 Nasdaq이 조정 국면에 진입했습니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "kospi",
+            "nasdaq",
+            "semiconductor",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "외국인 2월 국내주식 19.6조원 순매도…두달 연속 '팔자'",
+          "url": "https://www.yna.co.kr/view/AKR20260326195500002",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T21:00:01+00:00",
+          "summary": "2월 외국인 투자자들이 국내 주식시장에서 약 19.6조 원을 순매도하며 두 달 연속 매도세를 이어갔으나, 채권시장에서는 7.4조 원 규모의 순투자를 기록하며 넉 달째 유입세를 보였습니다. 외국인의 상장주식 보유 비중은 전체 시가총액의 32.6% 수준입니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "foreign investors",
+            "kospi",
+            "bonds",
+            "fss"
+          ]
+        },
+        {
+          "title": "종전 기대감 후퇴에 美주식·채권 동반급락…유가는 급등(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20260327006252072",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T20:57:01+00:00",
+          "summary": "트럼프 대통령의 이란 압박 수위가 높아지며 종전 기대감이 후퇴하자 나스닥이 고점 대비 11% 하락하며 조정 국면에 진입했습니다. 고유가로 인한 인플레이션 우려에 미국채 10년물 금리가 4.42%로 급등하고 엔비디아 등 반도체주가 큰 폭으로 하락했습니다.",
+          "importance": "high",
+          "category": "market",
+          "tags": [
+            "nasdaq",
+            "nvidia",
+            "treasury yield",
+            "inflation"
+          ]
+        },
+        {
+          "title": "Stock futures rise as Trump extends Iran negotiations deadline: Live updates",
+          "url": "https://www.cnbc.com/2026/03/26/stock-market-today-live-updates.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T22:56:58+00:00",
+          "summary": "트럼프 대통령의 이란 공격 유예 연장 소식에 미국 지수 선물은 소폭 반등세를 보이고 있습니다. 하지만 이란 측의 협상 거부 의사와 고유가 지속에 대한 불확실성이 여전하여 시장의 변동성은 계속될 것으로 보입니다.",
+          "importance": "medium",
+          "category": "market",
+          "tags": [
+            "futures",
+            "market",
+            "oil",
+            "iran"
+          ]
+        },
+        {
+          "title": "These inflation-protected plays can help investors manage the impact of higher prices",
+          "url": "https://www.cnbc.com/2026/03/26/these-inflation-protected-plays-can-help-investors-manage-the-impact-of-higher-prices.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T19:50:15+00:00",
+          "summary": "이란 전쟁으로 인한 유가 급등이 인플레이션 우려를 자극하면서 투자자들이 TIPS(물가연동국채)와 같은 방어 수단을 찾고 있습니다. 전문가들은 에너지 가격 상승이 소비자 구매력을 잠식하고 연준의 목표치를 상회하는 인플레이션을 지속시킬 것으로 경고했습니다.",
+          "importance": "medium",
+          "category": "market",
+          "tags": [
+            "inflation",
+            "tips",
+            "oil prices",
+            "investment strategy"
+          ]
+        },
+        {
+          "title": "'Grin and bear it': How investors are navigating the Trump-Iran market whiplash",
+          "url": "https://www.cnbc.com/2026/03/26/us-iran-conflicting-signals-markets-oil-volatility.html",
+          "source": "CNBC World",
+          "published": "2026-03-26T05:05:41+00:00",
+          "summary": "미국과 이란 사이의 상충되는 신호로 인해 시장은 외교적 해결과 군사적 에스컬레이션 가능성을 동시에 반영하며 극심한 변동성을 보이고 있습니다. 투자자들은 명확한 해결책이 없는 상황에서 헤드라인 뉴스에 따라 민감하게 반응하는 '휘플래시' 장세를 겪고 있습니다.",
+          "importance": "medium",
+          "category": "market",
+          "tags": [
+            "volatility",
+            "iran",
+            "geopolitics",
+            "stocks"
+          ]
+        },
+        {
+          "title": "Why software stocks proved resilient on a dismal day for tech",
+          "url": "https://www.marketwatch.com/story/why-software-stocks-proved-resilient-on-a-dismal-day-for-tech-cbdc4bbb?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:54:00+00:00",
+          "summary": "Nasdaq 지수가 조정 국면에 진입하는 등 기술주 전반이 부진했음에도 불구하고 소프트웨어 섹터는 회복력을 보였습니다. Salesforce, CrowdStrike, Figma와 같은 주요 기업들의 주가는 상승하며 장을 마감했습니다.",
+          "importance": "medium",
+          "category": "market",
+          "tags": [
+            "nasdaq",
+            "software",
+            "tech stocks"
+          ]
+        },
+        {
+          "title": "Technical Assessment: Bullish in the Intermediate-Term",
+          "url": "https://finance.yahoo.com/research/reports/ARGUS_46549_TechnicalAnalysis_1774524030000?yptr=yahoo&ncid=yahooproperties_plusresear_nm5q6ze1cei",
+          "source": "Yahoo Finance",
+          "published": "2026-03-26T11:20:30+00:00",
+          "summary": "S&P 500 지수가 200일 이동평균선 아래에 머물고 있으나, 볼린저 밴드 하단 이탈 후 회복 조짐을 보이는 등 기술적으로 중기적 강세 신호가 포착되었습니다. 유가 안정이 주식 시장의 압박을 완화하고 있습니다.",
+          "importance": "medium",
+          "category": "market",
+          "tags": [
+            "spx",
+            "technical analysis",
+            "bullish"
+          ]
+        },
+        {
+          "title": "[K-People] 존리 \"사교육 시킬 돈으로 주식 사주는 게 부자 만드는 비결\"",
+          "url": "https://www.yna.co.kr/view/AKR20260326167900371",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T22:00:02+00:00",
+          "summary": "존리 전 대표는 KOSPI 6,000 돌파 상황에서도 주식 투자는 타이밍이 아닌 노후를 위한 장기적 습관이어야 한다고 강조했습니다. 한국 시장의 'Korea Discount'가 해소되는 과정이며, 연금저축펀드를 통한 ETF 투자를 권장했습니다.",
+          "importance": "medium",
+          "category": "market",
+          "tags": [
+            "john lee",
+            "kospi",
+            "long-term investment",
+            "etf"
+          ]
+        },
+        {
+          "title": "Gold Stock Stabilization Creates Opening For Ownership At A Discount",
+          "url": "https://www.investors.com/research/options/gold-stock-agnico-eagle-mines-aem-options-trade-markets-cash-secured-put/?src=A00220&yptr=yahoo",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T15:56:16+00:00",
+          "summary": "금광주(Gold Stock)가 가격 안정을 찾으면서 할인된 가격에 매수할 수 있는 기회가 생기고 있습니다. 금 가격의 흐름과 연계된 투자 전략이 유효할 것으로 보입니다.",
+          "importance": "low",
+          "category": "market",
+          "tags": [
+            "gold",
+            "mining",
+            "stocks"
+          ]
+        },
+        {
+          "title": "Veja os Três Assuntos Que Marcaram a Semana no Brasil",
+          "url": "https://www.bloomberg.com/news/videos/2026-03-26/veja-os-tres-assuntos-que-marcaram-a-semana-no-brasil-video",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T21:47:39+00:00",
+          "summary": "브라질 시장에서 한 주 동안 가장 주목받았던 세 가지 주요 경제 이슈를 정리한 뉴스 리포트입니다. 현지 특파원을 통해 브라질 내 주요 사건들을 요약하여 전달합니다.",
+          "importance": "low",
+          "category": "market",
+          "tags": [
+            "brazil",
+            "weekly_review",
+            "emerging_market"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "name": "경제 지표",
+      "articles": [
+        {
+          "title": "Global forecasting group sees U.S. inflation at 4.2% this year, much higher than Fed estimate",
+          "url": "https://www.cnbc.com/2026/03/26/global-forecasting-group-sees-us-inflation-at-4point2percent-this-year-much-higher-than-fed-estimate.html",
+          "source": "CNBC Economy",
+          "published": "2026-03-26T14:02:43+00:00",
+          "summary": "OECD는 이란 전쟁과 관세 영향으로 올해 미국 인플레이션 전망치를 4.2%로 대폭 상향 조정했으며, 이는 연준의 예상치인 2.7%를 크게 웃도는 수준입니다. 이에 따라 연준이 2027년까지 고금리 기조를 유지할 가능성이 제기되고 있습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "oecd",
+            "inflation",
+            "fed",
+            "gdp"
+          ]
+        },
+        {
+          "title": "Recession odds climb on Wall Street as economy shows cracks beneath the surface",
+          "url": "https://www.cnbc.com/2026/03/25/recession-odds-climb-on-wall-street-as-economy-shows-cracks-beneath-the-surface.html",
+          "source": "CNBC Economy",
+          "published": "2026-03-25T13:22:06+00:00",
+          "summary": "이란과의 전쟁 및 유가 급등으로 인해 Moody's와 Goldman Sachs 등 주요 기관들이 미국의 경기 침체(Recession) 확률을 상향 조정했습니다. 특히 휘발유 가격이 한 달 만에 35% 급등하며 인플레이션 압박과 노동 시장의 균열이 정책 입안자들에게 큰 과제가 되고 있습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "recession",
+            "fed",
+            "oil",
+            "inflation"
+          ]
+        },
+        {
+          "title": "Iran war will spare no major economy, says OECD — but the UK is more vulnerable than others",
+          "url": "https://www.cnbc.com/2026/03/26/uk-could-be-worse-hit-from-iran-war-of-all-major-economies-oecd.html",
+          "source": "CNBC World",
+          "published": "2026-03-26T14:39:08+00:00",
+          "summary": "OECD는 이란 전쟁의 여파로 영국의 올해 인플레이션 전망치를 4%로 대폭 상향하고 성장률 전망은 하향했습니다. 영국은 에너지 수입 의존도가 높아 G7 국가 중 미국 다음으로 높은 물가 상승 압력에 노출된 것으로 분석되었습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "oecd",
+            "uk",
+            "inflation",
+            "gdp"
+          ]
+        },
+        {
+          "title": "Workers everywhere feel very bad about their job security",
+          "url": "https://finance.yahoo.com/news/workers-everywhere-feel-very-bad-about-their-job-security-160224025.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:02:24+00:00",
+          "summary": "ADP 설문조사에 따르면 전 세계 노동자들의 고용 불안감이 심화되고 있으며, 특히 일본과 한국의 고용 안정 신뢰도는 각각 5%와 9%로 최저 수준을 기록했습니다. AI 도입과 지정학적 갈등으로 인한 유가 상승이 저임금 반복 노동자들의 불안을 가중시키고 있습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "employment",
+            "adp",
+            "ai"
+          ]
+        },
+        {
+          "title": "Fed’s Barr: Need to be vigilant against rise in inflation expectations",
+          "url": "https://www.investing.com/news/economy-news/feds-barr-need-to-be-vigilant-against-rise-in-inflation-expectations-4583996",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:18:48+00:00",
+          "summary": "Fed의 Michael Barr 부의장은 인플레이션 기대치 상승에 대해 경계심을 유지해야 한다고 강조했습니다. 그는 물가 안정 목표를 달성하기 위해 통화 정책의 신중한 접근이 필요함을 시사했습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "fed",
+            "inflation",
+            "monetary policy",
+            "interest rates"
+          ]
+        },
+        {
+          "title": "Investors Game Out Stagflation Risk in Japan as Oil Prices Rise",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-26/investors-game-out-stagflation-risk-in-japan-as-oil-prices-rise",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T23:04:54+00:00",
+          "summary": "유가 상승과 엔화 약세가 겹치면서 일본 경제에 수십 년간 겪지 못한 스태그플레이션 위험이 부각되고 있습니다. 투자자들은 이에 따라 기존의 투자 전략을 재검토하며 리스크에 대비하고 있습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "japan",
+            "stagflation",
+            "oil"
+          ]
+        },
+        {
+          "title": "휘발유·경유 210원씩 또 오른다",
+          "url": "https://www.mk.co.kr/news/economy/11999732",
+          "source": "매일경제",
+          "published": "2026-03-26T15:00:00+00:00",
+          "summary": "국제 에너지 가격 상승으로 인해 2026년 3월 27일부터 휘발유와 경유 공급가가 리터당 210원 인상되며 소비자 가격이 2000원을 돌파할 전망입니다. 정부는 유류세 인하 폭을 확대하고 나프타 수출 제한 조치를 시행하는 등 물가 안정화에 나섰습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "oil price",
+            "inflation",
+            "tax cut"
+          ]
+        },
+        {
+          "title": "한국 경제 성장률 전망 2.1→1.7%로 OECD \"전쟁 장기화땐 에너지 부담\"",
+          "url": "https://www.mk.co.kr/news/economy/11999607",
+          "source": "매일경제",
+          "published": "2026-03-26T10:36:01+00:00",
+          "summary": "OECD가 중동 지정학적 리스크를 반영해 한국의 올해 성장률 전망치를 2.1%에서 1.7%로 하향하고 물가 전망치는 2.7%로 상향했습니다. 한국은행은 물가 상승과 경기 침체가 동시에 나타나는 스태그플레이션 가능성을 경고하며 복합적 위기 상황임을 진단했습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "oecd",
+            "gdp",
+            "stagflation"
+          ]
+        },
+        {
+          "title": "이란 전쟁에…4월 기업경기 전망 계엄 후 최대 폭 하락",
+          "url": "https://www.yna.co.kr/view/AKR20260326159100002",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T21:00:04+00:00",
+          "summary": "이란 전쟁 여파로 인한 원자재 가격 상승과 불확실성 확대로 3월 전산업 기업심리지수(CBSI)가 94.1로 하락했습니다. 특히 4월 경기 전망치는 비상계엄 사태 이후 최대 폭으로 급락하며 기업들의 비관적 전망이 뚜렷해졌습니다.",
+          "importance": "high",
+          "category": "economy",
+          "tags": [
+            "cbsi",
+            "business sentiment",
+            "iran war",
+            "bok"
+          ]
+        },
+        {
+          "title": "부산시, 국제금융센터지수 23위로 역대 최고 순위",
+          "url": "https://www.yna.co.kr/view/AKR20260327019900051",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T22:55:19+00:00",
+          "summary": "부산시가 국제금융센터지수(GFCI 39) 평가에서 역대 최고 순위인 세계 23위를 기록했습니다. 핀테크 지수에서도 16위에 오르는 등 해양 및 디지털 금융 생태계 조성 노력이 긍정적인 평가를 받았습니다.",
+          "importance": "medium",
+          "category": "economy",
+          "tags": [
+            "busan",
+            "gfci",
+            "fintech",
+            "finance hub"
+          ]
+        },
+        {
+          "title": "[이코노워치] 고령화로 시장 커지는데…허점투성이 유언대용신탁",
+          "url": "https://www.yna.co.kr/view/AKR20260326092400546",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T21:00:11+00:00",
+          "summary": "초고령화 사회 진입으로 유언대용신탁 시장이 커지고 있으나, 전세보증보험 가입 불가 및 재건축 조합원 지위 양도 제한 등 법적·제도적 허점이 많아 가입자들의 주의가 요구됩니다. 금융권의 상품 출시 속도에 비해 관련 부동산 법규 정비가 미비하여 자산 관리의 걸림돌이 되고 있습니다.",
+          "importance": "medium",
+          "category": "economy",
+          "tags": [
+            "aging society",
+            "trust",
+            "inheritance",
+            "real estate"
+          ]
+        },
+        {
+          "title": "작년 말 보험사 대출채권 3.8조 증가…연체율 소폭 상승",
+          "url": "https://www.yna.co.kr/view/AKR20260326181100002",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T21:00:03+00:00",
+          "summary": "2025년 말 기준 보험사 대출채권 잔액이 265.2조 원으로 전분기 대비 3.8조 원 증가했으나, 경기 회복 지연으로 인해 연체율(0.84%)과 부실채권 비율(1.03%)이 동반 상승했습니다. 특히 기업대출을 중심으로 건전성 지표가 악화되는 추세입니다.",
+          "importance": "medium",
+          "category": "economy",
+          "tags": [
+            "insurance",
+            "loan delinquency",
+            "fss",
+            "debt"
+          ]
+        },
+        {
+          "title": "My brother says lawyers can get him into a Medicaid nursing home, despite his many assets. Is this a scam?",
+          "url": "https://www.marketwatch.com/story/my-brother-says-lawyers-can-get-him-into-a-medicaid-nursing-home-despite-his-many-assets-is-this-a-scam-614c2f85?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:10:00+00:00",
+          "summary": "많은 자산을 보유하고도 Medicaid 혜택을 받기 위해 변호사를 고용하는 행위에 대한 사기 가능성이 제기되었습니다. 자산을 보존하면서 Medicaid 자격을 얻는 것은 현실적으로 어렵다는 전문가의 의견이 제시되었습니다.",
+          "importance": "low",
+          "category": "economy",
+          "tags": [
+            "medicaid",
+            "personal finance",
+            "legal"
+          ]
+        },
+        {
+          "title": "My PayPal account received money from the Philippines with two phone numbers listed. I called them. Big mistake.",
+          "url": "https://www.marketwatch.com/story/my-paypal-account-received-money-from-the-philippines-with-two-phone-numbers-listed-i-called-them-big-mistake-5cd4cd47?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T20:55:00+00:00",
+          "summary": "PayPal 계정 사기 시도와 관련된 개인 보안 위협 사례가 보고되었습니다. 사용자는 다크웹에 정보가 유출된 상황에서 추가적인 금융 피해를 방지하기 위해 주의가 필요합니다.",
+          "importance": "low",
+          "category": "economy",
+          "tags": [
+            "paypal",
+            "fraud",
+            "security"
+          ]
+        },
+        {
+          "title": "Airport Lines Stretch for Hours, Forcing Travelers to Pivot to Cars and Trains",
+          "url": "https://www.bloomberg.com/news/videos/2026-03-26/airport-lines-stretch-for-hours-forcing-traveler-pivot-video",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T21:16:16+00:00",
+          "summary": "미국 전역의 공항 보안 검색 대기 시간이 정부 셧다운 여파로 기록적인 수준으로 길어지고 있습니다. 이에 따라 여행객들은 비행기 대신 렌터카나 기차와 같은 대체 교통수단을 선택하고 있습니다.",
+          "importance": "low",
+          "category": "economy",
+          "tags": [
+            "travel",
+            "transportation",
+            "shutdown"
+          ]
+        },
+        {
+          "title": "[부산소식] BNK부산은행, 부산형 해비타트 챌린지 기부금 전달",
+          "url": "https://www.yna.co.kr/view/AKR20260327020100051",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T22:55:58+00:00",
+          "summary": "BNK부산은행이 지역 저소득층 노인 주거 환경 개선을 위해 '부산형 해비타트 챌린지'에 3,000만 원을 기부했습니다. 부산시는 또한 글로벌 인재 육성을 위한 '2026 청년 월드클래스' 참여자를 모집하여 최대 1억 원을 지원할 계획입니다.",
+          "importance": "low",
+          "category": "economy",
+          "tags": [
+            "bnk",
+            "busan",
+            "social contribution",
+            "youth support"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "name": "정책/규제",
+      "articles": [
+        {
+          "title": "Anthropic wins preliminary injunction in DOD fight as judge cites 'First Amendment retaliation'",
+          "url": "https://www.cnbc.com/2026/03/26/anthropic-pentagon-dod-claude-court-ruling.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T23:31:09+00:00",
+          "summary": "샌프란시스코 연방법원이 AI 스타트업 Anthropic에 대한 트럼프 행정부의 블랙리스트 지정 및 Claude 모델 사용 금지 조치에 대해 예비적 금지 명령을 내렸습니다. 판사는 정부의 조치가 수정헌법 제1조에 위배되는 보복 행위라고 지적하며 Anthropic의 손을 들어주었습니다.",
+          "importance": "high",
+          "category": "policy",
+          "tags": [
+            "anthropic",
+            "trump",
+            "ai",
+            "legal"
+          ]
+        },
+        {
+          "title": "Sen. Warren rips Federal Reserve chair pick Kevin Warsh: 'You have learned nothing from your failures'",
+          "url": "https://www.cnbc.com/2026/03/26/federal-reserve-kevin-walsh-elizabeth-warren-trump.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T22:06:20+00:00",
+          "summary": "Elizabeth Warren 상원의원은 차기 연준 의장 지명자 Kevin Warsh가 과거 금융위기 당시 실패로부터 배운 것이 없으며, 트럼프 대통령의 '월스트리트 우선주의'를 대변할 것이라고 강력히 비판했습니다. Warren 의원은 그의 과거 기록이 연준 의장직 수행에 부적합하다고 주장했습니다.",
+          "importance": "high",
+          "category": "policy",
+          "tags": [
+            "fed",
+            "kevin warsh",
+            "elizabeth warren",
+            "monetary policy"
+          ]
+        },
+        {
+          "title": "As Meta sheds $119 billion in market cap, has the stock become ‘uninvestable’?",
+          "url": "https://www.marketwatch.com/story/as-meta-sheds-119-billion-in-market-cap-has-the-stock-become-uninvestable-994c4bd6?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:08:00+00:00",
+          "summary": "Meta의 시가총액이 1,190억 달러 증발하며 규제 리스크로 인해 투자 불가능한 종목이 될 수 있다는 우려가 나오고 있습니다. 하지만 일부 투자자들은 이러한 시장의 반응이 과도하다고 평가합니다.",
+          "importance": "high",
+          "category": "policy",
+          "tags": [
+            "meta",
+            "regulation",
+            "big tech"
+          ]
+        },
+        {
+          "title": "Fed's Cook Says Inflation More of a Risk Now Due to Iran War",
+          "url": "https://www.bloomberg.com/news/videos/2026-03-26/fed-s-cook-says-inflation-more-of-a-risk-now-due-to-war-video",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T22:47:04+00:00",
+          "summary": "Lisa Cook 연준 이사는 Iran 전쟁으로 인해 정책 결정에 있어 인플레이션 위험이 고용보다 더 큰 우려 사항이 되었다고 밝혔습니다. 전쟁 여파가 물가 상승 압력을 가중시키며 Fed의 리스크 균형을 변화시켰습니다.",
+          "importance": "high",
+          "category": "policy",
+          "tags": [
+            "fed",
+            "inflation",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "[속보] 휘발유 1934원·경유 1923원…2차 석유 최고가격 고시",
+          "url": "https://www.mk.co.kr/news/economy/11999620",
+          "source": "매일경제",
+          "published": "2026-03-26T11:04:02+00:00",
+          "summary": "정부가 27일부터 2차 석유 최고가격제를 시행하며 휘발유 1934원, 경유 1923원으로 상한선을 지정했습니다. 화물차 운전자와 취약계층을 위해 경유와 등유에 대한 정책적 배려를 강화하고 주유소의 담합 및 매점매석 행위를 집중 모니터링할 방침입니다.",
+          "importance": "high",
+          "category": "policy",
+          "tags": [
+            "energy policy",
+            "gasoline",
+            "price control"
+          ]
+        },
+        {
+          "title": "Trump says he will sign an executive order to 'immediately pay' TSA agents",
+          "url": "https://www.cnbc.com/2026/03/26/trump-tsa-shutdown-dhs.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T23:05:09+00:00",
+          "summary": "트럼프 대통령이 국토안보부(DHS) 셧다운으로 급여를 받지 못하고 있는 TSA 요원들에게 급여를 즉시 지급하기 위한 행정명령을 서명하겠다고 밝혔습니다. 이는 의회의 예산 협상이 지연됨에 따라 공항 혼란을 막기 위해 의회를 우회하여 독자적인 조치를 취하는 것입니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "tsa",
+            "shutdown",
+            "trump",
+            "policy"
+          ]
+        },
+        {
+          "title": "David Sacks says his time as Trump's crypto and AI czar has ended",
+          "url": "https://www.cnbc.com/2026/03/26/david-sacks-trump-crypto-ai-czar.html",
+          "source": "CNBC World",
+          "published": "2026-03-26T22:01:53+00:00",
+          "summary": "트럼프 행정부의 AI 및 암호화폐 담당관이었던 David Sacks가 130일간의 임기를 마치고 대통령 과학기술자문위원회(PCAST) 공동의장으로 자리를 옮깁니다. 그는 향후 인프라 구축과 AI 프레임워크 추진에 집중할 예정이며, 최근 2억 달러 규모의 디지털 자산을 매각한 것으로 알려졌습니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "trump",
+            "ai",
+            "crypto",
+            "policy"
+          ]
+        },
+        {
+          "title": "FASB votes against project tied to Trump civil fraud case",
+          "url": "https://finance.yahoo.com/economy/policy/articles/fasb-votes-against-project-tied-160121591.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:01:21+00:00",
+          "summary": "미국 회계기준위원회(FASB)는 도널드 트럼프 전 대통령의 민사 사기 재판에서 쟁점이 된 개인 재무제표 회계 기준 개정안을 추진하지 않기로 결정했습니다. 위원회는 현재의 지침으로도 충분하며 이해관계자들의 우선순위가 낮다는 점을 근거로 들었습니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "fasb",
+            "accounting",
+            "trump"
+          ]
+        },
+        {
+          "title": "US judge blocks Pentagon’s Anthropic blacklisting for now",
+          "url": "https://www.investing.com/news/general-news/us-judge-blocks-pentagons-anthropic-blacklisting-for-now-4583980",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:19:01+00:00",
+          "summary": "미국 법원이 Anthropic을 블랙리스트에 올리려던 Pentagon의 계획을 일시적으로 차단했습니다. 이번 결정은 AI 기업에 대한 정부 규제와 국방 계약 프로세스에 영향을 미칠 수 있습니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "anthropic",
+            "pentagon",
+            "ai",
+            "regulation"
+          ]
+        },
+        {
+          "title": "Miran Cautions Reducing Fed Balance Sheet Could Take Years",
+          "url": "https://www.bloomberg.com/news/videos/2026-03-26/miran-says-reducing-fed-balance-sheet-could-take-years-video",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T23:23:01+00:00",
+          "summary": "Stephen Miran 연준 이사는 Fed의 대차대조표 축소가 현재 수준에서 의미 있게 진행될 수 있으나, 이 과정은 수년이 걸릴 것이라고 경고했습니다. 그는 Miami 경제 클럽 행사에서 이러한 긴축 프로세스의 장기화 가능성을 언급했습니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "fed",
+            "monetary policy",
+            "balance sheet"
+          ]
+        },
+        {
+          "title": "대통령 ‘이너서클’ 지적에도…임기 만료 앞둔 금융지주 회장들 ‘한 번 더’",
+          "url": "https://www.mk.co.kr/news/economy/11999864",
+          "source": "매일경제",
+          "published": "2026-03-26T21:02:56+00:00",
+          "summary": "신한, BNK 등 주요 금융지주 회장들이 주주총회를 통해 연임을 확정하며 '2기 체제'를 출범시켰습니다. 금융당국은 지배구조 개선을 위해 회장 연임 시 주총 특별결의를 요구하는 등의 강화된 가이드라인을 4월 중 발표할 예정입니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "banking",
+            "governance",
+            "fss"
+          ]
+        },
+        {
+          "title": "계란값 뛰자...정부, 하루 생산 5000만→5500만개로 확 늘린다",
+          "url": "https://www.mk.co.kr/news/economy/11999716",
+          "source": "매일경제",
+          "published": "2026-03-26T13:28:37+00:00",
+          "summary": "정부는 계란 수급 안정을 위해 산란계 사육 시설을 확충하여 하루 생산량을 5500만 개로 늘리고, 가격 담합 등 불공정 행위에 엄정 대응하기로 했습니다. 돼지고기 역시 출하 체중 상향과 경매 비중 확대를 통해 공급을 늘리고 가격 투명성을 확보할 계획입니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "food prices",
+            "agriculture",
+            "supply chain"
+          ]
+        },
+        {
+          "title": "집값 띄우기·부정 청약 … 부동산범죄 1493명 적발",
+          "url": "https://www.mk.co.kr/news/economy/11999472",
+          "source": "매일경제",
+          "published": "2026-03-26T08:52:13+00:00",
+          "summary": "정부가 5개월간 부동산 특별단속을 실시한 결과 공급 질서 교란 및 불법 중개 등 부동산 범죄로 1493명을 적발했습니다. 국세청과 금감원은 향후 사업자대출의 용도 외 유용 여부를 집중 점검할 계획입니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "real estate",
+            "regulation",
+            "fraud"
+          ]
+        },
+        {
+          "title": "무보, 중형 조선 3사에 5천400억원 규모 RG 발급 지원…수출지원",
+          "url": "https://www.yna.co.kr/view/AKR20260327025100003",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T23:28:56+00:00",
+          "summary": "한국무역보험공사(K-SURE)가 대한조선 등 중형 조선 3사에 5,400억 원 규모의 선수금환급보증(RG) 발급을 지원했습니다. 이번 지원은 신용 한도 부족으로 수주에 어려움을 겪던 조선사들의 수출 경쟁력을 강화하기 위한 조치입니다.",
+          "importance": "medium",
+          "category": "policy",
+          "tags": [
+            "k-sure",
+            "shipbuilding",
+            "export",
+            "rg"
+          ]
+        },
+        {
+          "title": "Elon Musk's Boring Co. tunnels aren't wanted by most Nashville residents",
+          "url": "https://www.cnbc.com/2026/03/26/elon-musks-boring-co-tunnels-not-wanted-by-most-nashville-residents.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T22:16:01+00:00",
+          "summary": "내슈빌 주민의 절반 이상이 Elon Musk의 Boring Company가 추진하는 지하 터널 프로젝트에 반대한다는 조사 결과가 나왔습니다. 테네시주 정부는 프로젝트 강행을 위해 관련 법안을 검토 중이나, 지자체와 주민들은 안전 및 환경 문제를 이유로 강력히 반발하고 있습니다.",
+          "importance": "low",
+          "category": "policy",
+          "tags": [
+            "musk",
+            "boringcompany",
+            "infrastructure",
+            "tesla"
+          ]
+        },
+        {
+          "title": "Trump says he’ll order that TSA officers be paid, in a move that could end long waits at airport security",
+          "url": "https://www.marketwatch.com/story/trump-may-find-a-way-to-pay-tsa-officers-in-a-move-that-could-end-long-waits-at-airport-security-d9d030a5?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T23:28:00+00:00",
+          "summary": "트럼프 대통령은 부분적인 연방정부 셧다운으로 임금을 받지 못하고 있는 TSA(교통보안청) 직원들에게 즉각 임금을 지급하라는 행정명령에 서명할 예정입니다. 이를 통해 공항 보안 검색대의 긴 대기 시간 등 여행객들의 불편이 해소될 것으로 기대됩니다.",
+          "importance": "low",
+          "category": "policy",
+          "tags": [
+            "trump",
+            "tsa",
+            "shutdown",
+            "policy"
+          ]
+        },
+        {
+          "title": "[게시판] 제15회 새일센터 우수기관·유공자 포상식 개최",
+          "url": "https://www.yna.co.kr/view/AKR20260326151200530",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T21:00:08+00:00",
+          "summary": "여성가족부가 제15회 여성새로일하기센터 우수기관 포상식을 개최하여 여성 일자리 지원에 기여한 기관과 기업에 표창을 수여했습니다. 특히 생성형 AI를 활용한 직업교육을 운영한 종로새일센터 등이 우수 사례로 선정되었습니다.",
+          "importance": "low",
+          "category": "policy",
+          "tags": [
+            "employment",
+            "gender equality",
+            "ai training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "earnings",
+      "name": "기업 실적",
+      "articles": [
+        {
+          "title": "Meta's stock drops almost 8% as 2 court defeats add to Zuckerberg's recent woes",
+          "url": "https://www.cnbc.com/2026/03/26/meta-lawsuit-decision-zuckerberg-woes.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T20:10:06+00:00",
+          "summary": "Meta의 주가가 아동 안전 및 정신 건강 관련 소송 패소와 AI 전략에 대한 시장의 회의론이 겹치며 8% 급락했습니다. 회사는 Reality Labs 부문의 대규모 감원을 진행 중이며, 막대한 자본 지출에도 불구하고 경쟁사 대비 AI 성과가 뒤처진다는 평가를 받고 있습니다.",
+          "importance": "high",
+          "category": "earnings",
+          "tags": [
+            "meta",
+            "zuckerberg",
+            "nasdaq",
+            "ai"
+          ]
+        },
+        {
+          "title": "Micron’s stock falls into a bear market — and it’s now the cheapest in the S&P 500",
+          "url": "https://www.marketwatch.com/story/microns-stock-falls-into-a-bear-market-and-its-now-the-cheapest-in-the-s-p-500-f90d9114?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:33:00+00:00",
+          "summary": "Micron 주가가 하락하며 약세장에 진입했으나, 실적 기대치 상승과 주가 하락이 맞물려 S&P 500에서 가장 저렴한 주식이 되었습니다. 현재 Micron의 P/E 배수는 급격히 압축된 상태입니다.",
+          "importance": "high",
+          "category": "earnings",
+          "tags": [
+            "micron",
+            "semiconductor",
+            "valuation"
+          ]
+        },
+        {
+          "title": "Elon Musk Just Announced a ‘Herculean Task’ for Tesla. Can TSLA Stock Survive and Thrive?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-just-announced-herculean-161044939.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:10:44+00:00",
+          "summary": "Tesla(TSLA)가 SpaceX와 협력하여 칩 공장을 건설하는 '헤라클레스급 과업'을 발표했으나, 모건스탠리는 200억 달러 이상의 막대한 비용과 기술적 난이도에 우려를 표했습니다. 현재 주가는 높은 밸류에이션과 실적 압박으로 변동성이 큰 상태입니다.",
+          "importance": "high",
+          "category": "earnings",
+          "tags": [
+            "tsla",
+            "ai",
+            "semiconductor"
+          ]
+        },
+        {
+          "title": "“테슬라 괜히 먼저 샀나”…제네시스 G90에 FSD급 자율주행 탑재한다",
+          "url": "https://www.mk.co.kr/news/economy/11999880",
+          "source": "매일경제",
+          "published": "2026-03-26T21:22:44+00:00",
+          "summary": "현대자동차가 연내 제네시스 G90에 Tesla의 FSD와 유사한 '레벨 2+' 자율주행 기술을 탑재합니다. 현대차는 NVIDIA, Waymo, Google DeepMind와의 협력을 강화하여 2028년까지 도심 자율주행을 실현하고 글로벌 생산 능력을 확대할 계획입니다.",
+          "importance": "high",
+          "category": "earnings",
+          "tags": [
+            "hyundai",
+            "autonomous_driving",
+            "genesis"
+          ]
+        },
+        {
+          "title": "Target faces a new boycott over ICE response as retailer presses ahead with turnaround",
+          "url": "https://www.cnbc.com/2026/03/26/target-aft-boycott-ice-minneapolis.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T23:23:31+00:00",
+          "summary": "미국 교사 연맹(AFT)이 미니애폴리스에서 발생한 이민 세관 집행국(ICE) 작전과 관련된 Target의 대응을 문제 삼아 불매 운동을 선언했습니다. 실적 회복을 노리던 Target은 이번 불매 운동이 백투스쿨(Back-to-school) 시즌 매출에 미칠 영향을 우려하고 있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "target",
+            "boycott",
+            "retail",
+            "earnings"
+          ]
+        },
+        {
+          "title": "American Airlines in talks with Starlink and Amazon for Wi-Fi upgrade, weighs return of seatback screens",
+          "url": "https://www.cnbc.com/2026/03/26/american-airlines-starlink-amazon-inflight-entertainment-seatback-screens.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T23:13:51+00:00",
+          "summary": "American Airlines는 기내 엔터테인먼트 강화를 위해 SpaceX의 Starlink 및 Amazon과 Wi-Fi 업그레이드 및 좌석 등받이 스크린 재도입을 논의 중입니다. 이는 Delta 및 United Airlines와의 경쟁에서 프리미엄 서비스를 강화하려는 전략의 일환입니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "aal",
+            "starlink",
+            "amazon",
+            "aviation"
+          ]
+        },
+        {
+          "title": "Meta boosts investment in West Texas AI data center by over sixfold to $10 billion",
+          "url": "https://www.cnbc.com/2026/03/26/meta-to-spend-10-billion-on-ai-data-center-in-el-paso-1gw-by-2028.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T22:18:00+00:00",
+          "summary": "Meta는 텍사스 AI 데이터 센터 투자 규모를 기존 15억 달러에서 100억 달러로 6배 이상 확대하며 AI 인프라 구축에 박차를 가하고 있습니다. 대규모 투자에도 불구하고 광고 수익 우려와 법적 분쟁 등으로 인해 Meta 주가는 최근 하락세를 보였습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "meta",
+            "ai",
+            "data center",
+            "capex"
+          ]
+        },
+        {
+          "title": "Netflix raises prices across all streaming plans",
+          "url": "https://www.cnbc.com/2026/03/26/netflix-raises-prices-across-all-streaming-plans.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T21:44:47+00:00",
+          "summary": "Netflix가 콘텐츠 투자 비용 충당을 위해 모든 요금제의 가격을 최소 1달러 이상 인상했습니다. 이번 인상은 라이브 이벤트 및 비디오 팟캐스트 등 신규 콘텐츠 확대와 2026년 매출 목표 달성을 위한 수익성 강화 전략으로 풀이됩니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "nflx",
+            "streaming",
+            "subscription",
+            "earnings"
+          ]
+        },
+        {
+          "title": "Retail firms warn of price hikes if Iran war extends for months",
+          "url": "https://www.cnbc.com/2026/03/26/retail-next-hm-stock-price-hikes-iran-war-middle-east-costs.html",
+          "source": "CNBC World",
+          "published": "2026-03-26T16:45:57+00:00",
+          "summary": "Next와 H&M 등 주요 소매 기업들이 중동 분쟁 장기화에 따른 물류비 상승과 공급망 차질로 인한 가격 인상 가능성을 경고했습니다. 전쟁이 3개월 이상 지속될 경우 비용 부담을 소비자에게 전가할 수밖에 없으며, 이는 소비 심리 위축으로 이어질 전망입니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "retail",
+            "inflation",
+            "supply chain",
+            "earnings"
+          ]
+        },
+        {
+          "title": "Why Tesla isn’t getting a boost from high gas prices",
+          "url": "https://www.marketwatch.com/story/why-tesla-isnt-getting-a-boost-from-high-gas-prices-39a5bacf?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:21:00+00:00",
+          "summary": "고유가 상황임에도 불구하고 Tesla는 수혜를 입지 못하고 있는데, 이는 전기차 가격 상승과 높은 대출 금리 때문으로 분석됩니다. 잠재적 구매자들이 비용 부담으로 인해 구매를 기피하고 있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "tesla",
+            "ev",
+            "interest rates"
+          ]
+        },
+        {
+          "title": "How Zillow Preview affects Chicago’s battle over pre-market inventory",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/zillow-preview-affects-chicago-battle-160000570.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:00:00+00:00",
+          "summary": "Zillow가 부동산 매물이 MLS에 등록되기 전 광고할 수 있는 'Zillow Preview' 프로그램을 출시하며 시카고 지역의 매물 데이터 주도권 경쟁이 심화되고 있습니다. 이는 판매자에게 더 많은 노출 기회를 제공하지만 기존 비공개 네트워크(PLN)와의 갈등 요소가 남아있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "zillow",
+            "realestate",
+            "chicago"
+          ]
+        },
+        {
+          "title": "Echo Global Logistics expands platform with ITS acquisition",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/echo-global-logistics-expands-platform-155830454.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T15:58:30+00:00",
+          "summary": "Echo Global Logistics가 ITS Logistics 인수를 완료하며 연 매출 50억 달러 규모의 AI 기반 3자 물류(3PL) 기업으로 거듭났습니다. 이번 합병을 통해 공급망 솔루션 범위를 확장하고 자동화 및 머신러닝 기술을 활용한 물류 최적화를 가속화할 계획입니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "m&a",
+            "logistics",
+            "echo"
+          ]
+        },
+        {
+          "title": "Intel Stock Is Rising. Why the Chip Maker is Making ‘Pricing Updates.’",
+          "url": "https://www.barrons.com/articles/intel-stock-price-chip-sector-semiconductors-cpu-3575ea0d?siteid=yhoof2&yptr=yahoo",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:02:00+00:00",
+          "summary": "Intel이 제품 가격 정책 업데이트 소식에 주가가 상승세를 보이고 있습니다. 반도체 시장 내 경쟁력 확보와 수익성 개선을 위한 전략적 가격 조정으로 풀이됩니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "intel",
+            "semiconductor",
+            "pricing"
+          ]
+        },
+        {
+          "title": "Why Floor & Decor Holdings (FND) Could Rebound Sharply with Housing Recovery",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-floor-decor-holdings-fnd-155413564.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T15:54:13+00:00",
+          "summary": "Montaka Global Investments는 Floor & Decor Holdings(FND)가 주택 시장 회복 시 강력하게 반등할 것으로 전망했습니다. 현재 AI 열풍에 가려져 저평가되어 있으나 펀더멘털은 여전히 견고하다고 평가했습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "fnd",
+            "housing",
+            "undervalued"
+          ]
+        },
+        {
+          "title": "Meta Set To Lay Off 'Hundreds' Amid Expensive AI Push: Report",
+          "url": "https://www.investors.com/news/technology/meta-stock-layoffs-reality-labs-metaverse/?src=A00220&yptr=yahoo",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:08:34+00:00",
+          "summary": "Meta가 고비용의 AI 투자를 지속하는 가운데 수백 명 규모의 추가 감원을 계획하고 있다는 보고가 나왔습니다. 이는 효율성 제고와 AI 중심의 자원 재배치를 위한 조치로 해석됩니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "meta",
+            "layoffs",
+            "ai"
+          ]
+        },
+        {
+          "title": "Form DEF 14A Meta Platforms Inc For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-meta-platforms-inc-for-26-march-93CH-4583991",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:26+00:00",
+          "summary": "Meta Platforms Inc(META)가 연례 주주총회를 위한 Form DEF 14A 보고서를 제출했습니다. Mark Zuckerberg를 포함한 경영진의 보상 규모와 주요 주주 제안 사항이 포함되어 시장의 관심이 높습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "meta",
+            "facebook",
+            "proxy statement",
+            "big tech"
+          ]
+        },
+        {
+          "title": "Argan outlines $2.9B backlog strength and signals continued demand for large power projects",
+          "url": "https://seekingalpha.com/news/4569658-argan-outlines-2_9b-backlog-strength-and-signals-continued-demand-for-large-power-projects?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T23:26:51+00:00",
+          "summary": "Argan(AGX)은 2026 회계연도 4분기 매출 2억 6,210만 달러를 기록하며 역대 최고 실적을 달성했습니다. 대규모 전력 프로젝트 수요에 힘입어 29억 달러 규모의 수주 잔고를 확보하며 강력한 성장세를 보이고 있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "agx",
+            "earnings",
+            "backlog"
+          ]
+        },
+        {
+          "title": "SKYX projects deployment of over 1 million smart home units through major US and global initiatives in 2026",
+          "url": "https://seekingalpha.com/news/4569657-skyx-projects-deployment-of-over-1-million-smart-home-units-through-major-us-and-global?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T23:26:36+00:00",
+          "summary": "SKYX Platforms(SKYX)는 2025년 연간 매출 9,200만 달러를 기록하며 8분기 연속 전년 대비 성장을 달성했습니다. 2026년에는 글로벌 이니셔티브를 통해 100만 대 이상의 스마트 홈 유닛 배포를 목표로 하고 있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "skyx",
+            "smart home",
+            "revenue growth"
+          ]
+        },
+        {
+          "title": "Veritone targets up to $145M in 2026 revenue with Oracle partnership and expanded data access",
+          "url": "https://seekingalpha.com/news/4569656-veritone-targets-up-to-145m-in-2026-revenue-with-oracle-partnership-and-expanded-data-access?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T23:26:30+00:00",
+          "summary": "Veritone(VERI)은 Oracle과의 파트너십 및 데이터 액세스 확대를 통해 2026년 매출 목표를 최대 1억 4,500만 달러로 설정했습니다. aiWARE 스택의 온프레미스 판매 등 소프트웨어 부문의 성장이 기대됩니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "veri",
+            "oracle",
+            "aiware"
+          ]
+        },
+        {
+          "title": "Worksport outlines $35M–$42M 2026 revenue target as gross margins climb to 30% and new product launches accelerate",
+          "url": "https://seekingalpha.com/news/4569655-worksport-outlines-35m-42m-2026-revenue-target-as-gross-margins-climb-to-30-percent-and-new?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T23:16:41+00:00",
+          "summary": "Worksport(WKSP)는 2025년 순매출이 1,610만 달러로 전년 대비 두 배 가까이 증가했다고 발표했습니다. 2026년에는 신제품 출시를 통해 3,500만~4,200만 달러의 매출과 30%의 매출총이익률 달성을 목표로 합니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "wksp",
+            "revenue target",
+            "margin"
+          ]
+        },
+        {
+          "title": "Iridex outlines $51M-$53M 2026 revenue target as manufacturing shift and cost cuts drive positive cash flow",
+          "url": "https://seekingalpha.com/news/4569654-iridex-outlines-51m-53m-2026-revenue-target-as-manufacturing-shift-and-cost-cuts-drive?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T22:57:34+00:00",
+          "summary": "IRIDEX(IRIX)는 운영 효율화와 비용 절감을 통해 지속 가능한 수익성 경로에 진입했다고 밝혔습니다. 2026년 매출 가이던스를 5,100만~5,300만 달러로 제시하며 긍정적인 현금 흐름 창출에 집중하고 있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "irix",
+            "profitability",
+            "guidance"
+          ]
+        },
+        {
+          "title": "Daré outlines 2026 revenue launch and multiplatform strategy as DARE to PLAY expands nationwide",
+          "url": "https://seekingalpha.com/news/4569652-dare-outlines-2026-revenue-launch-and-multiplatform-strategy-as-dare-to-play-expands?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T22:56:43+00:00",
+          "summary": "Daré Bioscience(DARE)는 여성 건강 분야에 집중해 온 지난 10년의 성과가 2026년 매출 본격화로 나타날 것이라고 강조했습니다. DARE to PLAY 캠페인 확대 등 멀티플랫폼 전략을 통해 시장 점유율을 높일 계획입니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "dare",
+            "womens health",
+            "biotech"
+          ]
+        },
+        {
+          "title": "Laird Superfood outlines high single-digit sales growth and integration synergies after Navitas acquisition",
+          "url": "https://seekingalpha.com/news/4569653-laird-superfood-outlines-high-single-digit-sales-growth-and-integration-synergies-after?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+          "source": "Seeking Alpha",
+          "published": "2026-03-26T22:56:39+00:00",
+          "summary": "Laird Superfood (LSF)는 2025 회계연도에 전년 대비 15% 증가한 4,990만 달러의 기록적인 순매출을 달성했습니다. Navitas 인수 이후 통합 시너지와 한 자릿수 후반의 매출 성장을 목표로 하는 긍정적인 가이던스를 제시했습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "lsf",
+            "earnings",
+            "m&a"
+          ]
+        },
+        {
+          "title": "BYD Stock Rebound Gathers Pace as Oil Shock Drives EV Sales Boom",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-26/byd-stock-rebound-gathers-pace-as-oil-shock-drives-ev-sales-boom",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T23:10:37+00:00",
+          "summary": "Iran 전쟁으로 인한 유가 급등이 전기차 수요를 자극하면서 BYD 주가가 1년 만에 최고의 월간 상승률을 기록하고 있습니다. 고유가 상황이 EV 판매 전망을 밝게 하며 투자 심리를 견인하고 있습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "byd",
+            "ev",
+            "oil"
+          ]
+        },
+        {
+          "title": "Pernod Ricard Weighs Deal for Jack Daniel’s Maker Brown-Forman",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-26/pernod-ricard-weighs-deal-for-jack-daniel-s-maker-brown-forman",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T16:16:08+00:00",
+          "summary": "Pernod Ricard SA가 Jack Daniel’s 제조사인 Brown-Forman Corp. 인수를 검토하고 있습니다. 이는 주류 산업의 침체 속에서 기업들이 통합을 통해 돌파구를 찾으려는 시도로 풀이됩니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "m&a",
+            "pernod_ricard",
+            "brown_forman"
+          ]
+        },
+        {
+          "title": "“연봉 1억 넘는 설계사만 5606명”…매출·수익성 다 잡은 GA업계 게임체인저",
+          "url": "https://www.mk.co.kr/news/economy/11999628",
+          "source": "매일경제",
+          "published": "2026-03-26T11:09:24+00:00",
+          "summary": "한화생명금융서비스가 출범 5년 만에 매출 2.4조 원을 기록하며 흑자 전환에 성공했고, 연봉 1억 원 이상의 고소득 설계사가 5606명에 달하는 성과를 냈습니다. 이는 제조와 판매를 분리한 '제판분리' 전략이 성공적으로 안착하며 원수사인 한화생명의 실적 개선으로도 이어졌습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "hanwha life",
+            "insurance",
+            "sales"
+          ]
+        },
+        {
+          "title": "삼성증권 \"한화솔루션, 유상증자 시점·규모 아쉬워\"",
+          "url": "https://www.yna.co.kr/view/AKR20260327023700008",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T23:27:36+00:00",
+          "summary": "삼성증권은 한화솔루션(009830)의 2.4조 원 규모 유상증자에 대해 시점과 규모가 아쉽다고 평가하며 투자의견을 'Hold'로 하향했습니다. 다만 신재생에너지 이익 반영 시점 변경에 따라 목표주가는 42,000원으로 상향 조정했습니다.",
+          "importance": "medium",
+          "category": "earnings",
+          "tags": [
+            "hanwha solutions",
+            "samsung securities",
+            "stock",
+            "capital increase"
+          ]
+        },
+        {
+          "title": "Form 13D/A Redwire Corp For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-13da-redwire-corp-for-26-march-93CH-4583995",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:18:21+00:00",
+          "summary": "Redwire Corp(RDW)가 3월 26일자로 지분 변동 사항을 담은 Form 13D/A 보고서를 제출했습니다. 이는 주요 주주의 지분율 변화나 경영권 관련 의사결정의 변화를 나타낼 수 있습니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "redwire",
+            "rdw",
+            "sec filing",
+            "insider trading"
+          ]
+        },
+        {
+          "title": "Form DEF 14A RED ROBIN GOURMET BURGERS For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-red-robin-gourmet-burgers-for-26-march-93CH-4583994",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:32+00:00",
+          "summary": "Red Robin Gourmet Burgers(RRGB)가 연례 주주총회를 앞두고 Form DEF 14A 위임장 설명서를 공시했습니다. 이 문서에는 이사 선임 및 경영진 보상 체계 등 주요 의결 사항이 포함되어 있습니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "red robin",
+            "rrgb",
+            "proxy statement",
+            "governance"
+          ]
+        },
+        {
+          "title": "Form DEF 14A Liberty Broadband Corporation For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-liberty-broadband-corporation-for-26-march-93CH-4583993",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:30+00:00",
+          "summary": "Liberty Broadband Corporation(LBRDA)이 주주총회 소집을 위한 Form DEF 14A를 제출했습니다. 주주들은 이를 통해 기업 지배구조 및 향후 경영 전략에 대한 정보를 확인할 수 있습니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "liberty broadband",
+            "lbrda",
+            "sec filing",
+            "governance"
+          ]
+        },
+        {
+          "title": "Form DEF 14A Hormel Foods Corp For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-hormel-foods-corp-for-26-march-93CH-4583992",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:29+00:00",
+          "summary": "Hormel Foods Corp(HRL)가 3월 26일 Form DEF 14A를 공시하며 주주총회 안건을 공개했습니다. 기업의 보상 정책과 이사회 구성에 대한 세부 내용이 담겨 있습니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "hormel foods",
+            "hrl",
+            "proxy statement",
+            "dividends"
+          ]
+        },
+        {
+          "title": "Form DEF 14A NEWELL BRANDS INC. For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-newell-brands-inc-for-26-march-93CH-4583990",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:18+00:00",
+          "summary": "Newell Brands Inc(NWL)가 주주들에게 의결권 행사를 안내하는 Form DEF 14A를 공시했습니다. 실적 부진을 겪고 있는 상황에서 이사회 재편이나 경영 쇄신안이 포함되었는지 주목됩니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "newell brands",
+            "nwl",
+            "sec filing",
+            "governance"
+          ]
+        },
+        {
+          "title": "Form DEF 14A GCI Liberty For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-gci-liberty-for-26-march-93CH-4583989",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:17+00:00",
+          "summary": "GCI Liberty가 주주총회 소집 공고 및 의결권 행사 안내를 담은 DEF 14A 보고서를 공시했습니다. 이는 기업 지배구조 및 주주 투표와 관련된 정기적인 행정 절차입니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "gci liberty",
+            "sec filing",
+            "proxy statement"
+          ]
+        },
+        {
+          "title": "Form DEF 14A PEABODY ENERGY CORPORATION For: 26 March",
+          "url": "https://www.investing.com/news/filings/form-def-14a-peabody-energy-corporation-for-26-march-93CH-4583988",
+          "source": "Investing.com",
+          "published": "2026-03-26T23:15:16+00:00",
+          "summary": "PEABODY ENERGY CORPORATION이 연례 주주총회를 앞두고 DEF 14A 보고서를 제출했습니다. 주주들은 이를 통해 이사 선임 및 주요 경영 사안에 대한 의결권을 행사하게 됩니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "peabody energy",
+            "btu",
+            "sec filing"
+          ]
+        },
+        {
+          "title": "Bloomer Tech's 'Smart Bra' Tracks Women's Cardiovascular Data",
+          "url": "https://www.bloomberg.com/news/videos/2026-03-26/bloomer-tech-s-smart-bra-tracks-cardiovascular-data-video",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T21:54:22+00:00",
+          "summary": "Bloomer Tech이 여성의 심혈관 데이터를 추적할 수 있는 의료용 '스마트 브라'를 개발하여 테스트 중입니다. 이 웨어러블 기기는 내장된 섬유 센서를 통해 사용자의 건강 데이터를 수집하고 분석하는 기능을 제공합니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "healthtech",
+            "wearable",
+            "startup"
+          ]
+        },
+        {
+          "title": "[포토] 생산적 금융 확대하는 NH농협은행",
+          "url": "https://www.mk.co.kr/news/economy/11999444",
+          "source": "매일경제",
+          "published": "2026-03-26T08:40:02+00:00",
+          "summary": "NH농협은행 강태영 행장이 판교대기업금융센터 개점식에 참석하여 생산적 금융 확대를 강조했습니다. 강 행장은 경기도 경제과학진흥원을 방문해 중소기업 지원 현황을 점검하는 등 현장 경영 행보를 보였습니다.",
+          "importance": "low",
+          "category": "earnings",
+          "tags": [
+            "nh bank",
+            "banking",
+            "finance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forex",
+      "name": "환율/외환",
+      "articles": [
+        {
+          "title": "The beginning of the end for petrodollar dominance? Why Deutsche sees opportunity for Beijing",
+          "url": "https://www.cnbc.com/2026/03/25/iran-war-mark-end-petrodollar-deutsche.html",
+          "source": "CNBC World",
+          "published": "2026-03-25T14:13:03+00:00",
+          "summary": "Deutsche Bank는 이란 전쟁이 '페트로달러' 패권의 붕괴와 '페트로위안'의 부상을 가속화하는 촉매제가 될 수 있다고 분석했습니다. 중동 국가들이 안보와 에너지 결제 수단으로서 달러의 대안을 찾으면서 달러의 기축통화 지위가 약화될 위험이 제기되었습니다.",
+          "importance": "high",
+          "category": "forex",
+          "tags": [
+            "usd",
+            "yuan",
+            "petrodollar",
+            "forex"
+          ]
+        },
+        {
+          "title": "[표] 외국환율고시표",
+          "url": "https://www.mk.co.kr/news/economy/11999443",
+          "source": "매일경제",
+          "published": "2026-03-26T08:40:01+00:00",
+          "summary": "2026년 3월 26일자 외국환율고시표 데이터가 발표되었습니다. 해당 지표는 주요 통화 대비 원화 환율의 변동성을 보여주는 기초 자료로 활용됩니다.",
+          "importance": "low",
+          "category": "forex",
+          "tags": [
+            "exchange rate",
+            "forex",
+            "krw"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commodity",
+      "name": "원자재",
+      "articles": [
+        {
+          "title": "This map shows a crude ticking time bomb that hits much of the world’s oil supply in April",
+          "url": "https://www.marketwatch.com/story/this-map-shows-a-crude-ticking-time-bomb-that-hits-much-of-the-worlds-oil-supply-in-april-2c058db6?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T22:06:00+00:00",
+          "summary": "J.P. Morgan 전략가들은 Strait of Hormuz를 통한 원유 흐름 차질이 4월까지 전 세계 공급에 순차적인 충격을 줄 것이라고 경고했습니다. 이러한 공급망 혼란은 동양에서 서양으로 확산되며 글로벌 오일 시장에 시한폭탄이 될 수 있습니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "oil",
+            "supply chain",
+            "jp morgan"
+          ]
+        },
+        {
+          "title": "Lyft rolls out driver-relief program as US fuel prices climb",
+          "url": "https://finance.yahoo.com/sectors/energy/articles/lyft-rolls-driver-relief-program-155531401.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:01:28+00:00",
+          "summary": "미국-이스라엘 분쟁으로 인한 유가 급등으로 Lyft는 운전자들의 연료비 부담을 덜어주기 위한 60일 한정 캐시백 프로그램을 도입했습니다. 휘발유 가격이 갤런당 4달러에 육박함에 따라 DoorDash 등 다른 플랫폼 기업들도 유사한 지원책을 내놓고 있습니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "lyft",
+            "oil",
+            "gasoline"
+          ]
+        },
+        {
+          "title": "Crude Oil Prices Fall on the Outlook for a US-Iran Truce",
+          "url": "https://finance.yahoo.com/sectors/energy/articles/crude-oil-prices-fall-outlook-154623902.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T15:46:23+00:00",
+          "summary": "미국과 이란의 휴전 협상 기대감과 EIA 원유 재고 증가로 국제 유가가 3% 이상 급락했습니다. 다만 이란이 미국의 제안을 일부 거부하고 배상을 요구하면서 하락폭은 일부 만회되었습니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "oil",
+            "wti",
+            "iran"
+          ]
+        },
+        {
+          "title": "Oil Drops as Trump Pushes Back Timeline for Iran Energy Strikes",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-26/latest-oil-market-news-and-analysis-for-march-27",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T22:01:14+00:00",
+          "summary": "Donald Trump 대통령이 Iran 에너지 시설 타격에 대한 타임라인을 다시 늦추면서 국제 유가가 하락했습니다. 공급 차질에 대한 즉각적인 우려가 줄어들며 시장이 반응했습니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "oil",
+            "energy",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "Gold Lower on Mixed Signals Over Potential Iran Ceasefire",
+          "url": "https://www.bloomberg.com/news/videos/2026-03-26/gold-lower-on-mixed-signals-over-iran-video",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T21:41:24+00:00",
+          "summary": "Donald Trump 대통령이 미국과 이란 간의 휴전 가능성에 대해 엇갈린 신호를 보내면서 금값이 하락했습니다. 금 가격은 한때 3.4% 급락하며 약세장 진입 직전까지 갔으나, 에너지 시설 타격 중단 연장 소식에 일부 회복했습니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "gold",
+            "geopolitics",
+            "trump"
+          ]
+        },
+        {
+          "title": "최고가격제·유류세 총동원도 역부족 … '리터당 2천원' 눈앞",
+          "url": "https://www.mk.co.kr/news/economy/11999734",
+          "source": "매일경제",
+          "published": "2026-03-26T15:00:00+00:00",
+          "summary": "국제 유가 폭등으로 인해 국내 휘발유 및 경유 가격이 리터당 2,000원 돌파를 앞두고 있습니다. 정부는 유류세 인하와 최고가격제 시행, 나프타 수출 제한 등 특단의 조치를 내놓았으나 물가 안정 효과는 지켜봐야 하는 상황입니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "oil_price",
+            "inflation",
+            "energy_policy"
+          ]
+        },
+        {
+          "title": "미국산 경질유 늘리려면 수조원 설비 필요",
+          "url": "https://www.mk.co.kr/news/economy/11999458",
+          "source": "매일경제",
+          "published": "2026-03-26T08:48:23+00:00",
+          "summary": "한국의 중동산 원유 의존도가 70%에 달하는 가운데, 설비 최적화 문제로 인해 미국산 경질유로의 즉각적인 대체가 어려운 상황입니다. 에너지 안보를 위해 가스 발전의 유연성 확보와 해외 자원 개발 체계 재정비가 필요하다는 지적이 나옵니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "oil",
+            "energy security",
+            "lng"
+          ]
+        },
+        {
+          "title": "국제유가, 트럼프 협상수용 압박에 반등…브렌트 6%↑",
+          "url": "https://www.yna.co.kr/view/AKR20260327005600072",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T19:38:12+00:00",
+          "summary": "트럼프 대통령의 이란을 향한 최후통첩 시한이 다가오면서 중동 긴장이 재고조되어 브렌트유가 5.8% 급등한 배럴당 108.01달러를 기록했습니다. 시장은 협상 타결 가능성에 의구심을 품으며 안전자산과 원자재로 자금이 이동하는 양상을 보이고 있습니다.",
+          "importance": "high",
+          "category": "commodity",
+          "tags": [
+            "wti",
+            "brent oil",
+            "geopolitics",
+            "trump"
+          ]
+        },
+        {
+          "title": "Albemarle Corporation (ALB) Seen as a High-Upside Bet in the Lithium Market",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albemarle-corporation-alb-seen-high-154901632.html",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T15:49:01+00:00",
+          "summary": "Albemarle(ALB)은 리튬 시장에서 높은 상승 잠재력을 가진 기업으로 꼽혔습니다. 재생 에너지와 배터리 수요로 인한 미래 공급 부족 상황에서 리튬 생산자로서의 수혜가 기대됩니다.",
+          "importance": "medium",
+          "category": "commodity",
+          "tags": [
+            "alb",
+            "lithium",
+            "ev"
+          ]
+        },
+        {
+          "title": "Gold Pares Losses as Trump Extends Deadline for Iran War Talks",
+          "url": "https://www.bloomberg.com/news/articles/2026-03-26/gold-pares-losses-as-trump-extends-deadline-for-iran-war-talks",
+          "source": "Bloomberg Markets",
+          "published": "2026-03-26T22:21:13+00:00",
+          "summary": "Donald Trump 대통령이 중동 전쟁 종식을 위한 Iran과의 협상 기한을 연장함에 따라 금 가격이 하락폭을 일부 만회했습니다. 지정학적 긴장 완화 기대감이 안전 자산인 금 시장에 반영되었습니다.",
+          "importance": "medium",
+          "category": "commodity",
+          "tags": [
+            "gold",
+            "trump",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "세계경제, 여전히 석유에 의존 … AI·전기차 시대에도 대체불가",
+          "url": "https://www.mk.co.kr/news/economy/11999561",
+          "source": "매일경제",
+          "published": "2026-03-26T09:41:01+00:00",
+          "summary": "탈탄소 흐름에도 불구하고 AI와 전기차 시대의 전력 수요 폭증으로 인해 석유와 천연가스 의존도는 여전히 높은 상태입니다. 중동발 공급망 차질로 항공유와 나프타 가격이 급등하면서 항공 노선 축소 및 플라스틱 원료 부족 등 산업 전반에 타격이 확산되고 있습니다.",
+          "importance": "medium",
+          "category": "commodity",
+          "tags": [
+            "energy",
+            "supply chain",
+            "lng"
+          ]
+        },
+        {
+          "title": "'고유가 여파'…대구 대중교통 이용 증가세",
+          "url": "https://www.yna.co.kr/view/AKR20260326168500053",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T21:35:00+00:00",
+          "summary": "미국과 이란 간의 전쟁 여파로 유가가 급등하면서 대구 지역의 승용차 통행량이 감소하고 대중교통 이용객이 증가했습니다. 시내버스 이용객은 전년 대비 5.8% 증가했으며, 고유가 지속에 따른 에너지 절약 시책이 강화되고 있습니다.",
+          "importance": "low",
+          "category": "commodity",
+          "tags": [
+            "oil price",
+            "transportation",
+            "energy",
+            "daegu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geopolitics",
+      "name": "지정학",
+      "articles": [
+        {
+          "title": "Trump extends pause on attacking Iran energy facilities to April 6",
+          "url": "https://www.cnbc.com/2026/03/26/trump-iran-war-oil-energy-pause.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T22:46:44+00:00",
+          "summary": "트럼프 대통령이 이란 정부의 요청에 따라 이란 에너지 시설에 대한 공격 중단 기간을 4월 6일까지 10일 연장한다고 발표했습니다. 이번 조치는 호르무즈 해협 봉쇄로 인한 유가 급등과 증시 하락세 속에서 긴장 완화를 시도하는 움직임으로 풀이됩니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "iran",
+            "oil",
+            "trump",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "Trump says Iran let 10 oil ships through Strait of Hormuz as a 'present' to U.S.",
+          "url": "https://www.cnbc.com/2026/03/26/trump-iran-war-oil-strait-of-hormuz.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T20:17:08+00:00",
+          "summary": "Donald Trump 대통령은 이란이 호르무즈 해협을 통해 10척의 유조선 통과를 허용한 것을 미국의 '선물'이라고 언급하며 평화 협상 가능성을 시사했습니다. 하지만 이란 측은 미국의 휴전 제안을 거절하고 호르무즈 해협 주권을 요구하는 등 양측의 입장이 엇갈리고 있습니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "iran",
+            "trump",
+            "oil",
+            "strait of hormuz"
+          ]
+        },
+        {
+          "title": "What comes next? Three attack scenarios as U.S. sends thousands more troops to Middle East",
+          "url": "https://www.cnbc.com/2026/03/26/iran-war-trump-us-troops-kharg-island-qeshm-island-nuclear-middle-east.html",
+          "source": "CNBC Top News",
+          "published": "2026-03-26T13:35:30+00:00",
+          "summary": "미국이 중동 지역에 3,000명의 추가 병력을 파견하면서 이란에 대한 지상 공격 가능성이 제기되고 있습니다. 군사 전문가들은 이번 파견이 전면전보다는 이란 내 주요 섬 점령이나 핵 물질 확보를 위한 제한적 작전일 가능성이 높다고 분석합니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "iran",
+            "military",
+            "pentagon",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "Trump pauses plans to attack Iranian energy infrastructure, as Nasdaq falls into a correction",
+          "url": "https://www.marketwatch.com/story/nasdaq-falls-into-correction-territory-and-trump-pauses-plans-to-attack-iranian-energy-infrastructure-27732ce3?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:19:00+00:00",
+          "summary": "Nasdaq이 조정장에 진입하며 증시가 급락하자 Trump 대통령은 이란 에너지 인프라에 대한 공격 계획을 10일간 유예한다고 발표했습니다. 시장의 불안정성이 군사적 결정에 영향을 미친 것으로 보입니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "trump",
+            "iran",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "Iran’s Kharg Island may be the next battleground, as Trump extends pause on attacking energy infrastructure",
+          "url": "https://www.marketwatch.com/story/irans-economic-heartbeat-kharg-island-may-be-the-next-battleground-as-trumps-5-day-pause-ends-this-weekend-e8917c41?mod=mw_rss_topstories",
+          "source": "MarketWatch",
+          "published": "2026-03-26T21:17:00+00:00",
+          "summary": "Trump 대통령이 이란 에너지 시설 공격 유예 기간을 4월 6일까지 연장했으나, 이란의 핵심 석유 수출 허브인 Kharg Island는 여전히 잠재적 타겟으로 주목받고 있습니다. 지정학적 긴장이 원유 시장의 불확실성을 높이고 있습니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "iran",
+            "oil",
+            "kharg island"
+          ]
+        },
+        {
+          "title": "‘검은진주’ 석유패권…다시 세계를 흔들다 [뉴스&분석]",
+          "url": "https://www.mk.co.kr/news/economy/11999562",
+          "source": "매일경제",
+          "published": "2026-03-26T09:45:20+00:00",
+          "summary": "미국과 이란의 갈등으로 인한 '3차 오일쇼크' 우려가 커지는 가운데, 석유가 미·중 패권 경쟁의 핵심 요소로 다시 부상하고 있습니다. 중국이 위안화 결제를 늘리며 '페트로 달러' 체제에 도전하자 미국은 석유 패권을 수성하기 위해 지정학적 대응을 강화하는 추세입니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "oil shock",
+            "petrodollar",
+            "us-china"
+          ]
+        },
+        {
+          "title": "[연합뉴스 이 시각 헤드라인] - 07:30",
+          "url": "https://www.yna.co.kr/view/AKR20260327016000011",
+          "source": "연합뉴스 경제",
+          "published": "2026-03-26T22:30:00+00:00",
+          "summary": "Trump 대통령이 이란 에너지 시설에 대한 공격 유예 시한을 4월 6일까지로 연장하며 외교적 협상 가능성을 열어두었습니다. 그러나 중동 불안 지속으로 국제 유가가 급등하고 뉴욕 증시는 하락하는 등 시장 불확실성은 여전합니다.",
+          "importance": "high",
+          "category": "geopolitics",
+          "tags": [
+            "trump",
+            "iran",
+            "oil price",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "Electronic warfare in the Persian Gulf: How GPS interference is disrupting the Middle East",
+          "url": "https://www.cnbc.com/2026/03/26/how-gps-interference-is-disrupting-the-middle-east.html",
+          "source": "CNBC World",
+          "published": "2026-03-26T08:01:12+00:00",
+          "summary": "페르시아만에서 드론 및 미사일 공격을 방어하기 위한 GPS 교란(Spoofing)이 급증하면서 선박과 항공기 운항에 차질이 발생하고 있습니다. 이러한 전자전은 미국의 GPS 시스템에 대한 취약성을 노출시켰으며, 에너지 수송로인 호르무즈 해협의 물류 위험을 높이고 있습니다.",
+          "importance": "medium",
+          "category": "geopolitics",
+          "tags": [
+            "gps",
+            "iran",
+            "shipping",
+            "defense"
+          ]
+        },
+        {
+          "title": "4 ETFs to Consider for the End of the Iran War",
+          "url": "https://www.barrons.com/articles/4-etfs-end-of-the-iran-war-ec887a3a?siteid=yhoof2&yptr=yahoo",
+          "source": "Yahoo Finance",
+          "published": "2026-03-25T16:02:00+00:00",
+          "summary": "이란 전쟁 종료 가능성에 대비하여 투자자들이 주목해야 할 4가지 ETF가 소개되었습니다. 지정학적 리스크 해소는 시장 전반의 위험 선호 심리를 개선할 수 있습니다.",
+          "importance": "medium",
+          "category": "geopolitics",
+          "tags": [
+            "etf",
+            "iran",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "“김정은 잘 대처했었다”…‘북미회담’ 트럼프 통역사가 전한 그날 분위기",
+          "url": "https://www.mk.co.kr/news/politics/11999921",
+          "source": "매경 증권",
+          "published": "2026-03-26T23:24:38+00:00",
+          "summary": "과거 북미정상회담 당시 도널드 Trump 대통령의 통역을 맡았던 이연향 전 국장이 당시 회담 분위기와 김정은 위원장의 대처 능력을 회고했습니다. Trump 대통령과 김 위원장의 관계가 실제로 우호적이었으며 양측 모두 문제 해결 의지가 있었다고 전했습니다.",
+          "importance": "medium",
+          "category": "geopolitics",
+          "tags": [
+            "trump",
+            "north korea",
+            "diplomacy"
+          ]
+        },
+        {
+          "title": "北 '러 우방국' 벨라루스와 우호조약",
+          "url": "https://www.mk.co.kr/news/politics/11999537",
+          "source": "매경 증권",
+          "published": "2026-03-26T09:01:45+00:00",
+          "summary": "김정은 위원장이 벨라루스의 루카셴코 대통령을 평양으로 초청해 정상회담을 갖고 양국 간 우호협력조약을 체결했습니다. 이는 반미·친러 연대를 강화하고 외교적 고립을 탈피하려는 행보로 분석됩니다.",
+          "importance": "medium",
+          "category": "geopolitics",
+          "tags": [
+            "north korea",
+            "belarus",
+            "geopolitics"
+          ]
+        },
+        {
+          "title": "김정은, 벨라루스 대통령 평양 초청해 ‘친러·반미’ 정상외교",
+          "url": "https://www.mk.co.kr/news/politics/11999079",
+          "source": "매경 증권",
+          "published": "2026-03-26T05:25:39+00:00",
+          "summary": "북한과 벨라루스 정상이 평양에서 만나 우호협력조약을 체결하며 양국 관계를 격상시켰습니다. 양 정상은 소련군 추모 시설인 해방탑을 참배하며 러시아를 매개로 한 결속력을 과시했습니다.",
+          "importance": "medium",
+          "category": "geopolitics",
+          "tags": [
+            "north korea",
+            "belarus",
+            "russia"
+          ]
+        },
+        {
+          "title": "우크라 파병 후 가까워진 두 나라…벨라루스 대통령, 첫 방북",
+          "url": "https://www.mk.co.kr/news/politics/11998725",
+          "source": "매경 증권",
+          "published": "2026-03-25T23:14:14+00:00",
+          "summary": "루카셴코 벨라루스 대통령이 사상 처음으로 북한을 공식 방문하여 김정은 위원장과 성대한 환영식을 가졌습니다. 우크라이나 전쟁 이후 밀착된 양국 관계를 바탕으로 군사 및 경제적 협력 가능성이 제기됩니다.",
+          "importance": "medium",
+          "category": "geopolitics",
+          "tags": [
+            "north korea",
+            "belarus",
+            "diplomacy"
+          ]
+        }
+      ]
+    }
+  ]
+}
