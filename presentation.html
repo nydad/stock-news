@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>S/W개발팀 AI PoC 현황 공유</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; background: #F5F6F8; color: #1E293B; overflow: hidden; word-break: keep-all; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+        .slides { display: flex; transition: none; }
+        .slide { min-width: 100vw; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 3vh 5vw; background: transparent; box-sizing: border-box; overflow-y: auto; -webkit-overflow-scrolling: touch; position: relative; }
+        .slide > * { flex-shrink: 0; }
+        .slide.surface { background: #EBEDF2; }
+        .slide.light { background: #FFFFFF; }
+        .slide.samsung { background: linear-gradient(135deg, #1E3A5F 0%, #2563EB 55%, #3B82F6 100%); color: #FFF; }
+        .slide.samsung .sub { color: rgba(255,255,255,0.8); } .slide.samsung .em { color: #93C5FD; }
+        .slide.blue { background: #2563EB; color: #FFF; } .slide.blue .sub { color: rgba(255,255,255,0.8); } .slide.blue .em { color: #BFDBFE; }
+        .slide.navy { background: #1E3A5F; color: #FFF; } .slide.navy .sub { color: rgba(255,255,255,0.75); } .slide.navy .em { color: #93C5FD; }
+        h1 { font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 900; text-align: center; line-height: 1.1; letter-spacing: -0.03em; }
+        h2 { font-size: clamp(2.2rem, 4.5vw, 4rem); font-weight: 700; text-align: center; line-height: 1.15; letter-spacing: -0.02em; }
+        h3 { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.015em; color: #1E293B; }
+        .sub { font-size: clamp(1.3rem, 2.2vw, 1.8rem); color: #64748B; margin-top: 1.5vh; text-align: center; line-height: 1.5; font-weight: 400; }
+        .em { color: #0D9488; } .red { color: #DC2626; } .green { color: #059669; } .yellow { color: #D97706; }
+        .meta { margin-top: 2vh; font-size: 0.9rem; color: #94A3B8; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; }
+        .comp { display: flex; gap: 16px; margin: 2vh 0; flex-wrap: nowrap; width: 100%; max-width: 1000px; }
+        .comp-item { padding: 40px 32px; text-align: center; background: #FFFFFF; flex: 1; min-height: 200px; border: 1px solid #E2E8F0; border-top: 3px solid #CBD5E1; border-radius: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; }
+        .comp-item.on { border-top-color: #2563EB; }
+        .comp-item.green-on { border-top-color: #059669; background: #F0FDF9; }
+        .comp-item.red-on { border-top-color: #DC2626; background: #FEF2F2; }
+        .comp-item .tag { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.15em; color: #94A3B8; font-weight: 600; }
+        .comp-item.on .tag { color: #2563EB; } .comp-item.green-on .tag { color: #059669; } .comp-item.red-on .tag { color: #DC2626; }
+        .comp-item p { font-size: clamp(1rem, 1.3vw, 1.25rem); font-weight: 600; line-height: 1.4; color: #334155; }
+        .list { list-style: none; max-width: 80vw; width: 100%; margin: 0 auto; }
+        .list li { font-size: clamp(1.1rem, 1.8vw, 1.5rem); padding: 1.4vh 0; border-bottom: 1px solid #E2E8F0; color: #475569; font-weight: 400; line-height: 1.35; text-align: center; }
+        .list li:last-child { border-bottom: none; }
+        .list strong { color: #1E293B; font-weight: 700; }
+        .grid { display: flex; gap: 16px; margin-top: 2vh; flex-wrap: nowrap; width: 100%; max-width: 1000px; }
+        .grid-item { padding: 24px 20px; text-align: center; background: #FFFFFF; flex: 1; min-height: 90px; border-radius: 16px; border: 1px solid #E2E8F0; border-top: 3px solid #CBD5E1; box-shadow: 0 4px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .grid-item .name { font-size: clamp(1rem, 1.3vw, 1.2rem); font-weight: 700; margin-bottom: 6px; letter-spacing: -0.01em; color: #1E293B; }
+        .grid-item .desc { font-size: clamp(0.82rem, 1vw, 0.95rem); color: #64748B; font-weight: 400; line-height: 1.4; }
+        blockquote { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 300; max-width: 780px; text-align: center; line-height: 1.6; color: #1E293B; letter-spacing: -0.01em; }
+        cite { display: block; margin-top: 24px; font-size: 0.82rem; color: #94A3B8; font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; }
+        .note { padding: 1.8vh 2.5vw; margin-top: 2vh; max-width: 82vw; border-radius: 12px; display: flex; align-items: center; gap: 12px; }
+        .note.warn { background: #FFFBEB; border: 1px solid #FDE68A; }
+        .note.warn p { color: #92400E; font-size: clamp(0.95rem, 1.2vw, 1.1rem); font-weight: 500; }
+        .note.tip { background: #F0FDF9; border: 1px solid #A7F3D0; }
+        .note.tip p { color: #065F46; font-size: clamp(0.95rem, 1.2vw, 1.1rem); font-weight: 500; }
+        .pipeline { display: flex; align-items: center; gap: 8px; margin: 2vh 0; flex-wrap: nowrap; }
+        .pipeline-step { background: #FFFFFF; padding: 1.6vh 2.8vw; font-size: clamp(0.95rem, 1.15vw, 1.1rem); font-weight: 600; text-align: center; border-radius: 12px; border: 1px solid #E2E8F0; color: #475569; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .pipeline-step.on { background: #EFF6FF; border-color: #93C5FD; color: #1D4ED8; }
+        .pipeline-step.green { background: #F0FDF9; border-color: #A7F3D0; color: #065F46; }
+        .pipeline-arrow { color: #CBD5E1; font-size: 1.2rem; padding: 0 6px; }
+        .tbl { margin-top: 1.5vh; border-collapse: collapse; max-width: 82vw; }
+        .tbl th, .tbl td { padding: 1vh 2vw; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .tbl th { color: rgba(255,255,255,0.3); font-weight: 500; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; }
+        .tbl td { font-size: clamp(0.95rem, 1.15vw, 1.1rem); color: #B8C8E0; }
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 2vh; width: 100%; max-width: 1000px; }
+        .stat-card { background: #FFFFFF; padding: 44px 32px; text-align: center; border: 1px solid #E2E8F0; border-top: 3px solid #CBD5E1; border-radius: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; }
+        .stat-card.on { border-top-color: #2563EB; }
+        .stat-card.green-on { border-top-color: #059669; background: #F0FDF9; }
+        .stat-card.red-on { border-top-color: #DC2626; background: #FEF2F2; }
+        .stat-card .label { font-size: 0.92rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.10em; margin-bottom: 12px; }
+        .stat-card .value { font-size: clamp(2.8rem, 4.5vw, 4rem); font-weight: 900; line-height: 1; color: #1E293B; margin-bottom: 8px; }
+        .stat-card .source { font-size: 0.82rem; color: #94A3B8; }
+        .img { background: #FFFFFF; border: 1px solid #E2E8F0; padding: 4vh 3vw; text-align: center; max-width: 600px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+        .img .label { font-size: 0.85rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.1em; }
+        .img .prompt { font-size: 0.9rem; color: #94A3B8; line-height: 1.5; }
+        .two-col { display: flex; gap: 3vw; width: 100%; max-width: 900px; margin-top: 2vh; }
+        .two-col .col { flex: 1; text-align: left; }
+        .impact-text { font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 900; line-height: 1.2; letter-spacing: -0.03em; text-align: center; color: #1E293B; }
+        .impact-sub { font-size: clamp(1.4rem, 2vw, 1.8rem); font-weight: 400; color: #64748B; margin-top: 2vh; text-align: center; }
+        .big { font-size: clamp(6rem, 18vw, 14rem); font-weight: 900; color: #2563EB; line-height: 1; opacity: 0.06; position: absolute; pointer-events: none; }
+        .formula { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; letter-spacing: 0.02em; }
+        .stat { text-align: center; }
+        .stat .number { font-size: clamp(4rem, 10vw, 8rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1; color: #2563EB; }
+        .stat .label { font-size: clamp(1rem, 1.5vw, 1.3rem); color: #64748B; margin-top: 1vh; font-weight: 400; letter-spacing: 0.05em; }
+        .nav { position: fixed; bottom: 28px; left: 40px; display: flex; gap: 4px; }
+        .nav button { width: 44px; height: 44px; background: rgba(255,255,255,0.7); border: 1px solid #E2E8F0; color: #94A3B8; font-size: 16px; cursor: pointer; transition: all 0.2s; border-radius: 8px; }
+        .nav button:hover { background: #EFF6FF; border-color: #93C5FD; color: #2563EB; }
+        .part-label { position: fixed; top: 28px; left: 40px; font-size: 0.75rem; color: #CBD5E1; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }
+        .page-num { position: fixed; bottom: 28px; right: 40px; font-size: 0.75rem; color: #CBD5E1; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em; }
+        .progress { position: fixed; top: 0; left: 0; height: 2px; background: linear-gradient(90deg, #2563EB, #0D9488); transition: none; z-index: 100; }
+        .slide::-webkit-scrollbar { width: 3px; }
+        .slide::-webkit-scrollbar-thumb { background: #E2E8F0; }
+        @media (max-width: 768px) { .slide { padding: 28px 24px 72px 24px; } .comp, .grid { flex-direction: column; gap: 6px; } .stat-grid { grid-template-columns: 1fr; gap: 8px; } .two-col { flex-direction: column; gap: 2vh; } .tbl { display: block; overflow-x: auto; } .nav { left: 20px; bottom: 20px; } .pipeline { flex-wrap: wrap; gap: 1px; } }
+        @media print { body { background: #fff; color: #000; overflow: visible; } .nav, .progress, .part-label, .page-num { display: none; } .slides { display: block; } .slide { min-height: auto; page-break-after: always; background: #fff !important; color: #000 !important; padding: 2cm; } .slide.samsung, .slide.blue, .slide.navy { color: #000 !important; } .em, .red, .green, .yellow { color: #000 !important; } .sub { color: #333 !important; } }
+        @media (prefers-reduced-motion: reduce) { .slides { transition: none; } .nav button { transition: none; } }
+        .nav button:focus-visible { outline: 2px solid #5FB3FF; outline-offset: 2px; }
+        .slide:focus-visible { outline: none; }
+    </style>
+</head>
+<body>
+    <div class="part-label">S/W개발팀 AI PoC &middot; 2026. Q2</div>
+    <div class="progress" id="progress"></div>
+    <div class="slides" id="slides">
+
+        <!-- 01 Cover -->
+        <div class="slide samsung">
+            <h1>S/W개발팀<br>AI PoC 현황</h1>
+            <p class="sub">Claude Code와 함께한 <span class="em">변화의 시작</span></p>
+            <p class="meta" style="margin-top:4vh; color:rgba(255,255,255,0.35);">S/W개발팀 &middot; 2026. Q2</p>
+        </div>
+
+        <!-- 02 배경 -->
+        <div class="slide surface">
+            <h3>AI PoC 추진 배경</h3>
+            <div class="pipeline" style="margin-top:3vh;">
+                <div class="pipeline-step">DS부문 리더십</div>
+                <span class="pipeline-arrow">&rarr;</span>
+                <div class="pipeline-step on">AI센터 협업</div>
+                <span class="pipeline-arrow">&rarr;</span>
+                <div class="pipeline-step green">S/W개발팀 선행 수행</div>
+            </div>
+            <p class="sub" style="margin-top:3vh;">전사 Top-down 의지 &mdash; <span class="em">AI 도구를 활용한 개발 효율화</span></p>
+        </div>
+
+        <!-- 03 Claude Code 섹션 -->
+        <div class="slide navy">
+            <h1>Claude Code</h1>
+            <p class="sub">코딩 에이전트, <span class="em">그 이상</span></p>
+        </div>
+
+        <!-- 04 Claude Code 상세 -->
+        <div class="slide light">
+            <h3 style="margin-bottom:1vh;">코딩 에이전트로 알려져 있지만</h3>
+            <div class="grid" style="margin-top:3vh;">
+                <div class="grid-item" style="padding:48px 32px; min-height:220px;">
+                    <i class="ph ph-code" style="font-size:3rem; color:#0D9488; margin-bottom:12px;"></i>
+                    <p class="name" style="color:#0D9488; font-size:1.15rem;">코드 작성</p>
+                    <p class="desc">읽기 &middot; 수정 &middot; 실행<br>자율 판단 &middot; 동작</p>
+                </div>
+                <div class="grid-item" style="padding:48px 32px; min-height:220px;">
+                    <i class="ph ph-file-text" style="font-size:3rem; color:#0D9488; margin-bottom:12px;"></i>
+                    <p class="name" style="color:#0D9488; font-size:1.15rem;">문서 &middot; 분석</p>
+                    <p class="desc">스펙 해석 &middot; 리포트<br>데이터 분석 &middot; 시각화</p>
+                </div>
+                <div class="grid-item" style="padding:48px 32px; min-height:220px;">
+                    <i class="ph ph-desktop" style="font-size:3rem; color:#0D9488; margin-bottom:12px;"></i>
+                    <p class="name" style="color:#0D9488; font-size:1.15rem;">컴퓨터 조작</p>
+                    <p class="desc">터미널 &middot; 브라우저<br>외부 도구 연동</p>
+                </div>
+            </div>
+            <p class="sub" style="margin-top:3vh;">비교 검토 후 <span class="em">Claude Code 채택</span></p>
+        </div>
+
+        <!-- 05 시연영상 -->
+        <div class="slide surface">
+            <h2 style="margin-bottom:3vh;">Claude Code<br>실제 동작</h2>
+            <div class="img" style="max-width:800px; padding:8vh 4vw; border-radius:16px; border:1px solid rgba(255,255,255,0.08);">
+                <i class="ph ph-play-circle" style="font-size:5rem; color:rgba(255,255,255,0.2);"></i>
+                <span class="label">Demo Video</span>
+                <p class="prompt">시연 영상 삽입 예정</p>
+            </div>
+        </div>
+
+        <!-- 06 추진 현황 -->
+        <div class="slide surface">
+            <h2>추진 현황</h2>
+        </div>
+
+        <!-- 07 교육 현황 -->
+        <div class="slide light">
+            <h3>교육 &amp; 전파</h3>
+            <div class="stat-grid" style="margin-top:3vh;">
+                <div class="stat-card on" style="padding:48px 32px;">
+                    <div class="label">PoC 교육 인원</div>
+                    <div class="value">100<span style="font-size:1.5rem">명+</span></div>
+                    <div class="source">2025.12 ~ 2026.03</div>
+                </div>
+                <div class="stat-card on" style="padding:48px 32px;">
+                    <div class="label">리더진 핸즈온</div>
+                    <div class="value" style="font-size:clamp(2.2rem,3.5vw,3rem);">전 임원 &middot; PL</div>
+                    <div class="source">S/W개발팀 리더 전원 완료</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 07-2 BP 사례 -->
+        <div class="slide light">
+            <h3>BP 사례 &mdash; <span class="em">100건+</span></h3>
+            <div class="img" style="max-width:900px; padding:6vh 4vw; margin-top:3vh;">
+                <i class="ph ph-images" style="font-size:4rem; color:#CBD5E1;"></i>
+                <span class="label">BP 사례 이미지</span>
+                <p class="prompt">캡처 이미지 삽입 예정</p>
+            </div>
+        </div>
+
+        <!-- 08 실전 증거 섹션 -->
+        <div class="slide surface">
+            <h2>실전 적용</h2>
+            <p class="sub">SE조직 &mdash; <span class="em">Before &rarr; After</span></p>
+        </div>
+
+        <!-- 09 Before / After 비교 -->
+        <div class="slide light">
+            <h3>SW Dev. Portal 업그레이드</h3>
+            <div class="comp" style="margin-top:3vh;">
+                <div class="comp-item red-on" style="min-height:200px;">
+                    <div class="tag">2022 &mdash; Before</div>
+                    <p style="font-size:clamp(2rem,3vw,2.8rem); font-weight:900; margin:8px 0;"><span class="red">10</span>명</p>
+                    <p>ITO 6명 + 내부 인력</p>
+                    <p style="font-size:clamp(2rem,3vw,2.8rem); font-weight:900; margin:8px 0;"><span class="red">1</span>년</p>
+                    <p>매주 Sync-up 회의</p>
+                </div>
+                <div class="comp-item green-on" style="min-height:200px;">
+                    <div class="tag">2026 &mdash; After</div>
+                    <p style="font-size:clamp(2rem,3vw,2.8rem); font-weight:900; margin:8px 0;"><span class="green">2~3</span>명</p>
+                    <p>SE 인력 + Claude Code</p>
+                    <p style="font-size:clamp(2rem,3vw,2.8rem); font-weight:900; margin:8px 0;"><span class="green">2~3</span>주</p>
+                    <p>1,000+ 파일 &middot; 10만 Line+</p>
+                </div>
+            </div>
+            <p class="sub" style="margin-top:2vh;">이전보다 <span class="em">더 복잡하고 많은 수정</span>을 더 적은 인원이 더 빠르게</p>
+        </div>
+
+        <!-- 10 맥락 — 영역별 차이 -->
+        <div class="slide light">
+            <blockquote>
+                웹앱 &middot; 오픈소스 영역은<br>AI 코딩이 <span class="em">압도적 우위</span>인 영역
+            </blockquote>
+            <div class="note tip" style="margin-top:4vh;">
+                <p>웹앱 코드 기반이라 가능했던 사례 &mdash; FW &middot; 설계는 다른 속도</p>
+            </div>
+        </div>
+
+        <!-- 11 앞으로 (PL 파트) -->
+        <div class="slide navy">
+            <h1>앞으로</h1>
+            <p class="sub">AI PoC <span class="em">Next Step</span></p>
+            <p class="meta" style="margin-top:4vh; color:rgba(255,255,255,0.3);">PL 발표 파트</p>
+        </div>
+
+        <!-- 12 클로징 -->
+        <div class="slide blue">
+            <h1>감사합니다</h1>
+            <p class="sub">Q &amp; A</p>
+        </div>
+
+    </div>
+    <nav aria-label="Slide navigation" class="nav">
+        <button aria-label="Previous slide" onclick="prev()">&#8592;</button>
+        <button aria-label="Next slide" onclick="next()">&#8594;</button>
+    </nav>
+    <div class="page-num" id="pageNum">1 / 1</div>
+    <script>
+        const slides = document.querySelectorAll('.slide'), total = slides.length;
+        let current = 0;
+        const pageNumEl = document.getElementById('pageNum'), progressEl = document.getElementById('progress');
+        function update() { if (!pageNumEl || !progressEl) return; pageNumEl.textContent = `${current + 1} / ${total}`; progressEl.style.width = total > 1 ? `${(current / (total - 1)) * 100}%` : '100%'; }
+        function goTo(i) { if (total === 0) return; if (i < 0) i = 0; if (i >= total) i = total - 1; current = i; document.getElementById('slides').style.transform = `translateX(-${current * 100}vw)`; history.replaceState(null, '', '#' + (current + 1)); update(); }
+        function next() { goTo(current + 1); }
+        function prev() { goTo(current - 1); }
+        document.addEventListener('keydown', e => { const tag = document.activeElement.tagName; if (tag === 'INPUT' || tag === 'TEXTAREA' || document.activeElement.isContentEditable) return; switch (e.key) { case 'ArrowRight': case ' ': case 'PageDown': e.preventDefault(); next(); break; case 'ArrowLeft': case 'PageUp': e.preventDefault(); prev(); break; case 'Home': e.preventDefault(); goTo(0); break; case 'End': e.preventDefault(); goTo(total - 1); break; case 'f': case 'F': const el = document.documentElement; const isFs = document.fullscreenElement || document.webkitFullscreenElement; if (!isFs) { (el.requestFullscreen || el.webkitRequestFullscreen).call(el)?.catch(() => {}); } else { (document.exitFullscreen || document.webkitExitFullscreen).call(document)?.catch(() => {}); } break; } });
+        let tx = 0, ty = 0;
+        document.addEventListener('touchstart', e => { if (e.touches.length > 1) return; tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+        document.addEventListener('touchend', e => { if (e.changedTouches.length > 1) return; const dx = tx - e.changedTouches[0].clientX, dy = ty - e.changedTouches[0].clientY; if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) { if (dx > 0) next(); else prev(); } }, { passive: true });
+        const initSlide = parseInt(location.hash.slice(1)) - 1;
+        if (!isNaN(initSlide) && initSlide >= 0) goTo(initSlide); else update();
+    </script>
+</body>
+</html>
