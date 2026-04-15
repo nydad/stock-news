@@ -2,10 +2,40 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0;url=non-dev-seminar/index.html">
-<title>Redirecting…</title>
+<title>AI 세미나 발표자료</title>
+<style>
+  body{font-family:'Noto Sans KR',system-ui,sans-serif;background:#0D0D0D;color:#fff;min-height:100vh;margin:0;display:flex;align-items:center;justify-content:center;padding:2rem}
+  .wrap{max-width:760px;width:100%}
+  h1{font-size:clamp(1.8rem,3vw,2.4rem);font-weight:900;letter-spacing:-0.02em;margin:0 0 0.5rem}
+  .meta{color:rgba(255,255,255,0.55);font-size:0.9rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:2.5rem}
+  .decks{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  @media(max-width:600px){.decks{grid-template-columns:1fr}}
+  a.card{display:block;padding:2rem 1.5rem;border:1px solid rgba(255,255,255,0.1);border-radius:6px;background:rgba(255,255,255,0.02);text-decoration:none;color:#fff;transition:all .18s}
+  a.card:hover{border-color:rgba(34,211,238,0.5);background:rgba(34,211,238,0.05)}
+  a.card h2{margin:0 0 0.6rem;font-size:1.3rem;font-weight:800}
+  a.card p{margin:0;color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.5}
+  a.card .tag{display:inline-block;margin-bottom:0.8rem;padding:2px 10px;border-radius:3px;background:rgba(34,211,238,0.15);color:#22d3ee;font-size:0.72rem;font-weight:700;letter-spacing:0.1em}
+  .tag.audience-biz{background:rgba(251,191,36,0.15);color:#fbbf24}
+  footer{margin-top:3rem;color:rgba(255,255,255,0.35);font-size:0.8rem}
+</style>
 </head>
 <body>
-<p><a href="non-dev-seminar/index.html">non-dev-seminar</a></p>
+<div class="wrap">
+  <h1>AI 세미나 발표자료</h1>
+  <p class="meta">김학민 · 2026</p>
+  <div class="decks">
+    <a class="card" href="non-dev-seminar/">
+      <span class="tag audience-biz">비개발 대상</span>
+      <h2>AI가 바꾸는 일하는 방법</h2>
+      <p>AI Agent 시대와 반도체 — 시장·역할·메모리 병목을 업무 관점에서</p>
+    </a>
+    <a class="card" href="dev-seminar/">
+      <span class="tag">SW 개발자 대상</span>
+      <h2>Claude Code Hands-on</h2>
+      <p>도구·워크플로·작동 원리 — Part A 맥락 + Part B 실무 (2h)</p>
+    </a>
+  </div>
+  <footer>공통 리소스: <code>/assets</code> (images · videos · data · labs)</footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,94 @@
+# Schema validation report (regenerated)
+
+## batting/player_hitter_2001_2020.csv
+- rows: 570, cols: 37
+- year range: 2002-2020
+- columns: ['연도', '선수명', '팀명', 'AVG', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'TB', 'RBI', 'SAC'] ...
+
+## pitching/player_pitcher_2001_2020.csv
+- rows: 379, cols: 43
+- year range: 2002-2020
+- columns: ['연도', '선수명', '팀명', 'ERA', 'G', 'W', 'L', 'SV', 'HLD', 'WPCT', 'IP', 'H', 'HR', 'BB', 'HBP'] ...
+
+## fielding/player_defense_2001_2020.csv
+- rows: 12934, cols: 17
+- year range: 2002-2020
+- columns: ['연도', '선수명', '팀명', 'POS', 'G', 'GS', 'IP', 'E', 'PKO', 'PO', 'A', 'DP', 'FPCT', 'PB', 'SB'] ...
+
+## running/player_runner_2001_2020.csv
+- rows: 5817, cols: 10
+- year range: 2002-2020
+- columns: ['연도', '선수명', '팀명', 'G', 'SBA', 'SB', 'CS', 'SB%', 'OOB', 'PKO']
+
+## team/team_hitter_2001_2020.csv
+- rows: 174, cols: 26
+- year range: 2001-2020
+- columns: ['연도', '팀명', 'AVG', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'TB', 'RBI', 'SAC', 'SF'] ...
+
+## team/team_pitcher_2001_2020.csv
+- rows: 174, cols: 32
+- year range: 2001-2020
+- columns: ['연도', '팀명', 'ERA', 'G', 'W', 'L', 'SV', 'HLD', 'WPCT', 'IP', 'H', 'HR', 'BB', 'HBP', 'SO'] ...
+
+## team/team_defense_2001_2020.csv
+- rows: 174, cols: 13
+- year range: 2001-2020
+- columns: ['연도', '팀명', 'G', 'E', 'PKO', 'PO', 'A', 'DP', 'FPCT', 'PB', 'SB', 'CS', 'CS%']
+
+## team/team_runner_2001_2020.csv
+- rows: 174, cols: 9
+- year range: 2001-2020
+- columns: ['연도', '팀명', 'G', 'SBA', 'SB', 'CS', 'SB%', 'OOB', 'PKO']
+
+## team/team_total_2001_2020.csv
+- rows: 174, cols: 74
+- year range: 2001-2020
+- columns: ['연도', '팀명', 'AVG_Hitter', 'G_Hitter', 'PA_Hitter', 'AB_Hitter', 'R_Hitter', 'H_Hitter', '2B_Hitter', '3B_Hitter', 'HR_Hitter', 'TB_Hitter', 'RBI_Hitter', 'SAC_Hitter', 'SF_Hitter'] ...
+
+## team/team_standings_2001_2020.csv
+- rows: 174, cols: 8
+- year range: 2001-2020
+- columns: ['year', 'team', 'G', 'W', 'L', 'SV', 'WPCT', 'rank']
+
+## team/team_standings_2021_2025.csv
+- rows: 50, cols: 9
+- year range: 2021-2025
+- columns: ['year', 'rank', 'team', 'G', 'W', 'L', 'D', 'WPCT', 'GB']
+
+## team/team_standings_2001_2025.csv
+- rows: 224, cols: 9
+- year range: 2001-2025
+- columns: ['year', 'rank', 'team', 'G', 'W', 'L', 'D', 'WPCT', 'GB']
+- nullable >5%: {'GB': np.float64(77.7)}
+
+## team/team_name_mapping.csv
+- rows: 20, cols: 4
+- columns: ['name_kr', 'name_en', 'active_years', 'franchise']
+
+## postseason/korean_series_1982_2025.csv
+- rows: 44, cols: 5
+- year range: 1982-2025
+- columns: ['year', 'champion', 'runner_up', 'series_result', 'mvp']
+
+## attendance/kbo_attendance_1982_2025.csv
+- rows: 44, cols: 4
+- year range: 1982-2025
+- columns: ['year', 'total_attendance', 'avg_per_game', 'number_of_games']
+
+## awards/kbo_mvp_1982_2025.csv
+- rows: 44, cols: 4
+- year range: 1982-2025
+- columns: ['year', 'player', 'team', 'position']
+
+## awards/kbo_rookie_1983_2025.csv
+- rows: 43, cols: 4
+- year range: 1983-2025
+- columns: ['year', 'player', 'team', 'position']
+
+## awards/kbo_golden_glove_1982_2025.csv
+- rows: 438, cols: 4
+- year range: 1982-2025
+- columns: ['year', 'position', 'player', 'team']
+
+# GRAND TOTAL rows: 21651
+Wrote data_manifest.json

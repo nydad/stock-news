@@ -141,6 +141,7 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
 .slide.violet .em, .slide.in-violet .em { color:#a78bfa !important }
 .slide.teal .em, .slide.in-teal .em { color:#2dd4bf !important }
 .slide.blue .em, .slide.in-blue .em { color:#60a5fa !important }
+.slide.orange .em, .slide.in-orange .em { color:#fb923c !important }
 /* 섹션 컬러가 .sub strong 에도 은은히 반영 */
 .slide.rose h1, .slide.mint h1, .slide.indigo h1, .slide.cyan h1,
 .slide.amber h1, .slide.violet h1, .slide.teal h1, .slide.blue h1 { position:relative }
@@ -152,6 +153,7 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
 .slide.violet h1::after { content:""; display:block; width:48px; height:3px; background:#a78bfa; margin:2vh auto 0; border-radius:2px }
 .slide.teal h1::after { content:""; display:block; width:48px; height:3px; background:#2dd4bf; margin:2vh auto 0; border-radius:2px }
 .slide.blue h1::after { content:""; display:block; width:48px; height:3px; background:#60a5fa; margin:2vh auto 0; border-radius:2px }
+.slide.orange h1::after { content:""; display:block; width:48px; height:3px; background:#fb923c; margin:2vh auto 0; border-radius:2px }
 /* 포인트 em 가독성 */
 .em{font-weight:700}
 .slide.light .em{font-weight:800}
@@ -313,47 +315,35 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
   <p class="sub">1년 사이 모델 성능이 크게 달라져서, <span class="em">예전 경험 기준</span>으로는 현재 상황을 가늠하기 어려운 구간입니다</p>
 </div>
 
-<!-- S07 모든 지식 노동이 대상 -->
+<!-- S07 개발 업무 전반 적용 -->
 <div class="slide in-rose">
-  <h3>모든 지식 노동이 대상</h3>
-  <div class="stat-grid" style="margin-top:2vh;">
-    <div class="stat-card on">
-      <div class="label">지식 노동자 AI 채택률</div>
-      <div class="value" style="font-size:clamp(1.8rem,3vw,2.5rem);">75%+</div>
-      <div class="source">Microsoft Work Trend Index</div>
-    </div>
-    <div class="stat-card on">
-      <div class="label">AI 문서 자동화 시장</div>
-      <div class="value" style="font-size:clamp(1.8rem,3vw,2.5rem);">$50B+</div>
-      <div class="source">2027년 예상 규모</div>
-    </div>
-    <div class="stat-card on">
-      <div class="label">비개발 직군 도입 가속</div>
-      <div class="value" style="font-size:clamp(1.8rem,3vw,2.5rem);">2배</div>
-      <div class="source">전년 대비, Gartner</div>
-    </div>
-  </div>
+  <h3>개발 업무 전반에 확산</h3>
   <div class="comp" style="margin-top:2vh;">
     <div class="comp-item on">
-      <div class="tag">문서 작성</div>
-      <p>보고서 &middot; 기획서 &middot; 제안서</p>
+      <div class="tag">구현</div>
+      <p>기능 개발 &middot; 리팩터링<br>보일러플레이트 제거</p>
     </div>
     <div class="comp-item on">
-      <div class="tag">데이터 분석</div>
-      <p>시장 분석 &middot; 경쟁사 분석</p>
+      <div class="tag">품질</div>
+      <p>PR 리뷰 &middot; 테스트 생성<br>엣지 케이스 탐색</p>
     </div>
     <div class="comp-item on">
-      <div class="tag">커뮤니케이션</div>
-      <p>번역 &middot; 요약 &middot; 정리</p>
+      <div class="tag">디버깅</div>
+      <p>재현 &middot; 원인 분석<br>가설 경쟁</p>
+    </div>
+    <div class="comp-item on">
+      <div class="tag">운영</div>
+      <p>로그 분석 &middot; 장애 대응<br>문서화 &middot; 온콜 보조</p>
     </div>
   </div>
+  <p class="sub" style="margin-top:2vh;">단순 코드 생성이 아니라 <span class="em">개발 사이클 전반</span>에 AI가 스며드는 구조</p>
 </div>
 
 <!-- S09 Jensen Huang Quote -->
 <div class="slide in-rose">
   <blockquote>"자연어가 새로운 프로그래밍 언어가 되고 있고, <span class="em">더 많은 사람이</span> 기계와 직접 대화한다"</blockquote>
   <cite>&mdash; Jensen Huang, NVIDIA CEO</cite>
-  <p class="sub" style="margin-top:4vh;">한국어로 지시할 수 있으면, 컴퓨터를 부릴 수 있는 시대</p>
+  <p class="sub" style="margin-top:4vh;">셸 명령 대신 <span class="em">의도</span>로 컴퓨터를 조작하는 시대 &mdash; CLI에서 자연어 에이전트로</p>
 </div>
 
 <!-- ══ SECTION 02: 업계 기준선 (10-15) ══ -->
@@ -370,7 +360,7 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
   <h3>AI 사용자 규모 &mdash; 점 하나가 120만 명</h3>
   <div class="two-col" style="max-width:1040px; align-items:center; margin-top:2.5vh; gap:2vw;">
     <div class="col" style="flex:1.5; display:flex; flex-direction:column;">
-      <img loading="lazy" src="assets/ai-users-scale.png" alt="Each dot is ~1.2 million people" style="width:100%; max-height:44vh; object-fit:contain; border-radius:8px;" />
+      <img loading="lazy" src="../assets/images/ai-users-scale.png" alt="Each dot is ~1.2 million people" style="width:100%; max-height:44vh; object-fit:contain; border-radius:8px;" />
       <p style="text-align:center; margin-top:6px; font-size:0.8rem; color:rgba(255,255,255,0.3);">전 세계 AI 도구 사용자 분포</p>
     </div>
     <div class="col" style="flex:0.9; display:flex; flex-direction:column; gap:10px;">
@@ -558,13 +548,13 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
     <div class="arch-layer">
       <div class="role">모델 (두뇌)</div>
       <div class="brand">Exynos 2600</div>
-      <div class="desc">Opus 4.6 / Gemini 3.1 Pro / GPT-5.4</div>
+      <div class="desc">Claude (Opus / Sonnet / Haiku) / Gemini Pro / GPT-5 계열</div>
     </div>
   </div>
   <p class="sub" style="margin-top:3vh;">같은 모델이라도 <span class="em">어떤 에이전트 위에서 구동하느냐</span>에 따라 결과가 달라집니다</p>
 </div>
 
-<!-- S20 성능 공식 (비개발자 버전) -->
+<!-- S20 성능 공식 -->
 <div class="slide in-indigo">
   <h3>성능 공식</h3>
   <p class="formula" style="margin:4vh 0; font-size:clamp(2.5rem,5vw,3.8rem);">성능 = <span class="em">Model</span> &times; <span class="green">Agent</span> &times; <span class="yellow">나(Pilot)</span></p>
@@ -738,7 +728,7 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
 <div class="slide surface">
   <h3>AI 밸류체인 &mdash; 레이어 전체 지도</h3>
   <div style="text-align:center; width:100%; max-width:1120px; margin-top:0.5vh;">
-    <img src="assets/ai-value-chain-medium.png" alt="AI Value Chain Framework" style="width:100%; max-width:1120px; max-height:74vh; object-fit:contain; border-radius:8px; background:#F5F7FA; padding:10px; box-shadow:0 2px 20px rgba(0,0,0,0.4);">
+    <img src="../assets/images/ai-value-chain-medium.png" alt="AI Value Chain Framework" style="width:100%; max-width:1120px; max-height:74vh; object-fit:contain; border-radius:8px; background:#F5F7FA; padding:10px; box-shadow:0 2px 20px rgba(0,0,0,0.4);">
     <p style="text-align:center; margin-top:6px; font-size:0.72rem; color:rgba(255,255,255,0.4);">출처: Machine Learning Made Simple &mdash; Investor's Analysis of the Gen AI Market</p>
   </div>
   <p class="sub" style="margin-top:1vh; font-size:clamp(1rem,1.4vw,1.2rem);">반도체 &middot; 데이터센터 &middot; 클라우드 &middot; 모델 &middot; 애플리케이션 &mdash; 이 중 어디에 먼저 압력이 쌓일지 함께 살펴봅시다</p>
@@ -869,8 +859,8 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
 
 <!-- Larry Page 인용 임팩트 슬라이드 -->
 <div class="slide in-amber">
-  <blockquote style="max-width:960px;">"<span class="em">이 경쟁에서 지느니</span> 파산하는 게 낫다"</blockquote>
-  <cite>&mdash; Larry Page, Alphabet 공동 창업자 (언론 보도 정리)</cite>
+  <blockquote style="max-width:960px;">AI 레이스에서 <span class="em">뒤처지는 위험</span>이 회사 존립보다 크다는 정서</blockquote>
+  <cite>&mdash; Larry Page 발언 &middot; 빅테크 CEO 공개 발언 종합</cite>
   <p class="sub" style="margin-top:4vh; font-size:clamp(1.1rem,1.4vw,1.3rem); color:rgba(255,255,255,0.75);">AI 레이스의 투자 사이즈를 이해하는 또 하나의 앵커</p>
 </div>
 
@@ -1055,32 +1045,32 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
   <p class="sub" style="margin-top:2vh;">AI가 만든 것을 <span class="em">그대로 쓰는 것</span>이 아니라 <strong style="color:#fff;">검증하고 판단하는 것</strong>이 핵심</p>
 </div>
 
-<!-- S40 나의 역할은 어떻게 변하는가? -->
+<!-- S40 개발자 역할은 어떻게 변하는가? -->
 <div class="slide surface">
-  <h3>나의 역할은 어떻게 변하는가?</h3>
+  <h3>개발자 역할은 어떻게 변하는가?</h3>
   <div class="arch-layers" style="margin-top:3vh;">
     <div class="arch-layer">
-      <div class="role">정보 수집</div>
-      <div class="brand" style="font-size:1.1rem;">AI가 수집·정리 대행</div>
-      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 검증·큐레이션</div>
+      <div class="role">코드 탐색</div>
+      <div class="brand">AI가 레포 구조 파악 &middot; 관련 파일 수집</div>
+      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 설계 판단 &middot; 영향 범위 확정</div>
     </div>
     <div class="arch-layer">
-      <div class="role">보고서 작성</div>
-      <div class="brand" style="font-size:1.1rem;">AI가 초안 작성</div>
-      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 방향 설정·최종 판단</div>
+      <div class="role">구현</div>
+      <div class="brand">AI가 1차 초안 &middot; 보일러플레이트</div>
+      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 사양 정의 &middot; 계약 리뷰</div>
     </div>
     <div class="arch-layer">
-      <div class="role">데이터 분석</div>
-      <div class="brand" style="font-size:1.1rem;">AI가 데이터 처리</div>
-      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 인사이트 해석·의사결정</div>
+      <div class="role">디버깅</div>
+      <div class="brand">AI가 가설 여러 개 병렬 검토</div>
+      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 도메인 추론 &middot; 원인 확정</div>
     </div>
     <div class="arch-layer on">
-      <div class="role" style="color:#60a5fa;">커뮤니케이션</div>
-      <div class="brand" style="font-size:1.1rem;">AI가 번역·요약 보조</div>
-      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 맥락·뉘앙스 관리</div>
+      <div class="role" style="color:#60a5fa;">PR 리뷰 &middot; 문서</div>
+      <div class="brand">AI가 초안 &middot; 체크리스트 자동</div>
+      <div class="desc" style="color:#60a5fa; font-weight:600;">&rarr; 아키텍처 판단 &middot; 책임</div>
     </div>
   </div>
-  <p class="sub" style="margin-top:2vh;">AI가 처리하는 영역이 넓어질수록 &mdash; <span class="em">남는 영역의 밀도</span>가 높아진다</p>
+  <p class="sub" style="margin-top:2vh;">키보드 타격 시간은 줄고 &mdash; <span class="em">판단·검증의 밀도</span>가 올라간다</p>
 </div>
 
 <!-- S41 생산성의 역설 -->
@@ -1628,6 +1618,19 @@ OAuth 로그인 또는 API 키
   <div class="note tip" style="margin-top:2vh;"><p>세 리뷰 결과를 메인 에이전트가 <strong style="color:#22d3ee;">합성</strong> &mdash; 겹치는 항목은 high-confidence</p></div>
 </div>
 
+<!-- B6.3.5 디버깅 - 가설 경쟁 -->
+<div class="slide in-cyan">
+  <h3>디버깅 &mdash; 가설 경쟁 패턴</h3>
+  <div class="arch-layers" style="margin-top:2vh;">
+    <div class="arch-layer"><div class="role" style="color:#22d3ee;">1</div><div class="brand"><code style="color:#22d3ee;">/plan</code>으로 증상 재현 계획</div><div class="desc" style="color:rgba(255,255,255,0.7);">입력·환경·예상 출력 고정</div></div>
+    <div class="arch-layer"><div class="role" style="color:#22d3ee;">2</div><div class="brand">debugger 에이전트 &mdash; 5~8 가설 병렬</div><div class="desc" style="color:rgba(255,255,255,0.7);">경쟁하는 원인 후보를 FAST로 스크린</div></div>
+    <div class="arch-layer"><div class="role" style="color:#22d3ee;">3</div><div class="brand"><code style="color:#22d3ee;">/codex:rescue --background</code> 독립 재현</div><div class="desc" style="color:rgba(255,255,255,0.7);">다른 엔진의 2차 확인</div></div>
+    <div class="arch-layer"><div class="role" style="color:#22d3ee;">4</div><div class="brand"><code style="color:#22d3ee;">git bisect</code> + AI 해석으로 커밋 특정</div><div class="desc" style="color:rgba(255,255,255,0.7);">원인 커밋에 이유 설명</div></div>
+    <div class="arch-layer on"><div class="role" style="color:#22d3ee;">5</div><div class="brand" style="color:#22d3ee;">회귀 테스트 + 수정 커밋</div><div class="desc" style="color:#22d3ee; font-weight:700;">같은 버그가 다시 나지 않도록</div></div>
+  </div>
+  <div class="note tip" style="margin-top:2vh;"><p>"이 버그 고쳐줘" 한 줄보다 <strong style="color:#22d3ee;">재현 조건 + 가설 경쟁</strong>이 훨씬 효율적</p></div>
+</div>
+
 <!-- B6.4 Git Worktree -->
 <div class="slide in-cyan">
   <h3>Git Worktree &mdash; 병렬 브랜치 작업</h3>
@@ -1774,6 +1777,7 @@ ExitWorktree({keepBranch:true})</pre>
     <div style="border-left:3px solid #fbbf24; padding:16px 20px; background:rgba(251,191,36,0.04);"><div style="color:#fbbf24; font-weight:800; font-size:0.92rem; letter-spacing:0.08em; margin-bottom:6px;">FALLBACK</div><p style="color:rgba(255,255,255,0.92); font-size:0.98rem;">모델 다운 시 대체 경로 &middot; manual 모드</p></div>
     <div style="border-left:3px solid #a78bfa; padding:16px 20px; background:rgba(167,139,250,0.04);"><div style="color:#a78bfa; font-weight:800; font-size:0.92rem; letter-spacing:0.08em; margin-bottom:6px;">HUMAN</div><p style="color:rgba(255,255,255,0.92); font-size:0.98rem;">파괴적 작업은 확인 &middot; 승인 게이트</p></div>
     <div style="border-left:3px solid #a78bfa; padding:16px 20px; background:rgba(167,139,250,0.04);"><div style="color:#a78bfa; font-weight:800; font-size:0.92rem; letter-spacing:0.08em; margin-bottom:6px;">SHARE</div><p style="color:rgba(255,255,255,0.92); font-size:0.98rem;">잘 되는 프롬프트·Skill 팀 레포에 커밋</p></div>
+    <div style="border-left:3px solid #fca5a5; padding:16px 20px; background:rgba(252,165,165,0.04); grid-column:span 2;"><div style="color:#fca5a5; font-weight:800; font-size:0.92rem; letter-spacing:0.08em; margin-bottom:6px;">PROMPT INJECTION</div><p style="color:rgba(255,255,255,0.92); font-size:0.98rem;">MCP가 읽는 외부 데이터 (PR 본문 &middot; 이슈 &middot; 웹페이지) 에 악의적 지시 포함 가능 &mdash; untrusted input으로 간주, 민감 작업은 별도 확인 게이트</p></div>
   </div>
 </div>
 
@@ -1852,15 +1856,11 @@ const partMap=[
 {from:24,to:33,label:'Section 04 \u00b7 AI \uc778\ud504\ub77c \ubcd1\ubaa9'},
 {from:34,to:43,label:'Section 05 \u00b7 \uc5ed\ud560\uc758 \ubcc0\ud654'},
 {from:44,to:47,label:'Section 06 \u00b7 \ud604\uc2e4 \uc81c\uc57d'},
-{from:48,to:51,label:'Part II \u00b7 B1 Claude Code \uac1c\uc694'},
-{from:52,to:56,label:'Part II \u00b7 B2 Agent Loop'},
-{from:57,to:61,label:'Part II \u00b7 B3 Context Engineering'},
-{from:62,to:65,label:'Part II \u00b7 B4 Multi-agent'},
-{from:66,to:68,label:'Part II \u00b7 B5 MCP'},
-{from:69,to:75,label:'Part II \u00b7 B6 \uc2e4\uc804 \uc6cc\ud06c\ud50c\ub85c'},
-{from:76,to:78,label:'Part II \u00b7 B7 Harness'},
-{from:79,to:81,label:'Part II \u00b7 B8 \uc6b4\uc601'},
-{from:82,to:85,label:'Closing'}
+{from:48,to:56,label:'Part II B1 \u00b7 Claude Code + Agent Loop'},
+{from:57,to:68,label:'Part II B2 \u00b7 Context + Multi-agent + MCP'},
+{from:69,to:79,label:'Part II B3 \u00b7 \uc2e4\uc804 \uc6cc\ud06c\ud50c\ub85c + Harness'},
+{from:80,to:82,label:'Part II B4 \u00b7 \uc6b4\uc601 \u00b7 \ube44\uc6a9'},
+{from:83,to:86,label:'Closing'}
 ];
 function getPartLabel(idx){for(const p of partMap){if(idx>=p.from&&idx<=p.to)return p.label;}return 'AI \uc138\ubbf8\ub098';}
 function update(){if(!pageNumEl||!progressEl)return;pageNumEl.textContent=`${current+1} / ${total}`;progressEl.style.width=total>1?`${(current/(total-1))*100}%`:'100%';if(partLabelEl)partLabelEl.textContent=getPartLabel(current);}

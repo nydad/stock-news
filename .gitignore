@@ -1,0 +1,8 @@
+.claude/
+.meta-loop/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+node_modules/
+leadership-hands-on/
