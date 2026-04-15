@@ -1021,8 +1021,8 @@ h3{font-size:clamp(1rem,1.35vw,1.25rem)!important;color:rgba(255,255,255,0.78)!i
       <p style="color:#fca5a5;">문제 <strong>악화</strong></p>
     </div>
   </div>
-  <cite>&mdash; Google DORA Report, 2025</cite>
-  <p class="sub" style="margin-top:3vh;">AI는 마법이 아닌 <span class="em">증폭기</span> &mdash; 기반이 좋으면 가속, 아니면 혼란도 가속</p>
+  <p class="meta" style="color:rgba(255,255,255,0.55); margin-top:2vh;">&mdash; Google DORA Report, 2025</p>
+  <p class="sub" style="margin-top:2vh;">AI는 마법이 아닌 <span class="em">증폭기</span> &mdash; 기반이 좋으면 가속, 아니면 혼란도 가속</p>
 </div>
 
 <!-- AI의 한계 — 환각(Hallucination) -->
@@ -1387,7 +1387,6 @@ OAuth 로그인 또는 API 키
       <tr><td><code style="color:#22d3ee;">/clear</code></td><td>컨텍스트 초기화</td><td>무관한 작업 전환</td></tr>
       <tr><td><code style="color:#22d3ee;">/resume</code></td><td>드롭된 세션 복구</td><td>연결 끊김 / 재시작</td></tr>
       <tr><td><code style="color:#22d3ee;">/mcp</code></td><td>MCP 서버 관리</td><td>외부 도구 연결</td></tr>
-      <tr><td><code style="color:#22d3ee;">/fast</code></td><td>빠른 출력 모드</td><td>간단한 쿼리, 빠른 이터레이션</td></tr>
     </tbody>
   </table>
   <div class="note tip" style="margin-top:2vh;"><p>Plan mode는 <strong style="color:#22d3ee;">의사결정이 있는 작업</strong>에서 특히 유용 &mdash; 에이전트의 판단 근거를 먼저 본다</p></div>
@@ -1714,7 +1713,6 @@ ExitWorktree({keepBranch:true})</pre>
     <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/clear</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; 컨텍스트 초기화</span></div>
     <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/resume</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; 세션 복구</span></div>
     <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/mcp</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; MCP 서버 관리</span></div>
-    <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/fast</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; 빠른 응답 모드</span></div>
     <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/codex:review</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; Codex 교차 리뷰</span></div>
     <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/codex:rescue</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; Codex에 위임</span></div>
     <div style="border-left:3px solid #22d3ee; padding:14px 18px; background:rgba(34,211,238,0.04);"><code style="color:#22d3ee;">/chrome</code> <span style="color:rgba(255,255,255,0.7); font-size:0.92rem;">&mdash; 브라우저 자동화</span></div>
@@ -1860,7 +1858,7 @@ const partMap=[
 {from:57,to:68,label:'Part II B2 \u00b7 Context + Multi-agent + MCP'},
 {from:69,to:79,label:'Part II B3 \u00b7 \uc2e4\uc804 \uc6cc\ud06c\ud50c\ub85c + Harness'},
 {from:80,to:82,label:'Part II B4 \u00b7 \uc6b4\uc601 \u00b7 \ube44\uc6a9'},
-{from:83,to:86,label:'Closing'}
+{from:83,to:87,label:'Closing'}
 ];
 function getPartLabel(idx){for(const p of partMap){if(idx>=p.from&&idx<=p.to)return p.label;}return 'AI \uc138\ubbf8\ub098';}
 function update(){if(!pageNumEl||!progressEl)return;pageNumEl.textContent=`${current+1} / ${total}`;progressEl.style.width=total>1?`${(current/(total-1))*100}%`:'100%';if(partLabelEl)partLabelEl.textContent=getPartLabel(current);}
